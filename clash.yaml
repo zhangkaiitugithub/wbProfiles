@@ -5,1004 +5,796 @@ mode: Rule
 log-level: info
 external-controller: 0.0.0.0:9090
 proxies:
-  - {name: '🇯🇵JP_560 |17.32Mb', server: 146.56.156.227, port: 2053, type: vmess, uuid: fec5fd62-56e7-431a-99b3-c1f76c5cbe8d, alterId: 1, cipher: auto, tls: true, network: ws, ws-path: /, ws-headers: {Host: kr2.futi.online}}
   - {name: 'ZZ_47', server: 134.195.196.3, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
-  - {name: 'Relay_🏁ZZ-🏁ZZ_155_ 8.35Mb', server: 1023sg.fans8.xyz, port: 80, type: vmess, uuid: 7ea3f9bb-2082-3d43-b825-6bf7a052314a, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /v2ray}
-  - {name: 'n__15.35Mb', server: 38.75.137.187, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
-  - {name: 'Relay_🇨🇳CN-🇺🇸US_257 | 5.23Mb', server: shcn2-06b.iplc188.com, port: 10002, type: vmess, uuid: 65cac56d-4155-43c8-bae0-f368cb21f771, alterId: 1, cipher: auto, tls: false, network: tcp, ws-path: /, ws-headers: {Host: shcn2-06b.iplc188.com}}
-  - {name: '🇨🇦CA_187_115.39Mb', server: 198.57.27.152, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
-  - {name: 'n__23.31Mb', server: 38.68.134.69, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
-  - {name: 'n__+8.28Mb', server: 172.99.190.149, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM}
-  - {name: 'n__11.20Mb', server: 167.88.61.130, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
-  - {name: 'n__+9.17Mb', server: 38.75.136.58, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
-  - {name: '🇺🇸_US_美国_11', server: 38.68.135.19, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
-  - {name: '🇺🇸_US_美国_12', server: 167.88.61.130, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
-  - {name: 'n__10.83Mb', server: 142.202.48.43, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
-  - {name: '🇨🇦CA_200_108.05Mb', server: 198.57.27.152, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
-  - {name: 'ZZ_48', server: 134.195.196.3, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
-  - {name: 'n__16.78Mb', server: 38.75.136.45, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
-  - {name: 'n__17.01Mb', server: 142.202.48.43, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
-  - {name: 'n__12.42Mb', server: 38.75.136.116, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
-  - {name: 'n__21.71Mb', server: 38.75.137.187, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
-  - {name: 'n__22.12Mb', server: 38.114.114.68, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
-  - {name: 'n__10.01Mb', server: 38.75.136.45, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
-  - {name: '🇺🇸_US_美国_22', server: 38.75.136.45, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
-  - {name: '🏁+ZZ_118', server: 134.195.196.154, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
-  - {name: 'n__19.18Mb', server: 134.195.196.68, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
-  - {name: 'n__17.38Mb', server: 38.75.136.45, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
-  - {name: 'n__21.89Mb', server: 38.75.136.58, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
-  - {name: 'n__23.52Mb', server: 38.75.136.45, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM}
-  - {name: 'FR_12', server: 145.239.1.137, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
-  - {name: '🇺🇸+US_95', server: 167.88.61.130, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
-  - {name: '🇫🇷+FR_39', server: 145.239.1.137, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
-  - {name: 'n__+9.07Mb', server: 81.90.189.18, port: 805, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
-  - {name: 'n__26_+8.49Mb', server: 46.29.218.6, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
-  - {name: 'n__15.41Mb', server: 38.68.134.191, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM}
-  - {name: '🇨🇦_CA_加拿大_34', server: 134.195.196.154, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
-  - {name: 'n__18.23Mb', server: 38.75.136.45, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
-  - {name: 'n__25.78Mb', server: 38.75.136.45, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
-  - {name: 'n__10.36Mb', server: 134.195.196.68, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
-  - {name: '🇨🇳 CN_22', server: shcn2-06b.iplc188.com, port: 10001, type: vmess, uuid: 65cac56d-4155-43c8-bae0-f368cb21f771, alterId: 1, cipher: auto, tls: false, network: tcp, ws-path: /}
-  - {name: 'n__17.83Mb', server: 38.75.136.58, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
-  - {name: 'n__19.91Mb', server: 134.195.196.199, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
-  - {name: 'CA_3', server: 198.57.27.218, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
-  - {name: 'n__14.75Mb', server: 167.88.63.61, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
-  - {name: '🇨🇦+CA_03', server: 198.57.27.218, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
-  - {name: '🇺🇸_US_美国_44', server: 38.68.134.191, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
-  - {name: 'n__+8.93Mb', server: 38.68.134.191, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
-  - {name: 'n__+8.09Mb', server: 134.195.196.154, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
-  - {name: 'n__17.42Mb', server: 38.75.136.58, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
-  - {name: '🇨🇦CA_248_60.91Mb', server: 198.57.27.152, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
-  - {name: '🇨🇦CA_156_164.19Mb', server: 198.57.27.152, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM}
-  - {name: '🇺🇸_US_美国_50', server: 142.202.48.43, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
-  - {name: '🇨🇦_CA_加拿大_51', server: 198.57.27.152, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
-  - {name: 'n__12.81Mb', server: 167.88.63.61, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
-  - {name: '🇯🇵JP_156', server: 172.104.98.216, port: 80, type: vmess, uuid: e5af0cad-295c-37b2-b601-f35d13f6b1bb, alterId: 64, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: www.gov.hk}}
-  - {name: 'n__26.04Mb', server: 38.75.136.58, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
-  - {name: '🇳🇴NO_628_12.28Mb', server: 46.29.218.6, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
-  - {name: '🇯🇵 JP_54', server: 172.104.98.216, port: 80, type: vmess, uuid: e5af0cad-295c-37b2-b601-f35d13f6b1bb, alterId: 64, cipher: auto, tls: false, network: ws, ws-path: /}
-  - {name: '🇺🇸_US_美国_57', server: 167.88.63.61, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
-  - {name: 'n__13.05Mb', server: 167.88.63.61, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
-  - {name: 'n__14.41Mb', server: 167.88.63.61, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
-  - {name: 'n__11.55Mb', server: 38.75.137.187, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
-  - {name: '🇫🇷+FR_35', server: 145.239.1.137, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
-  - {name: '🇨🇦CA_222_170.79Mb', server: 198.57.27.152, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
-  - {name: 'n__16.27Mb', server: 134.195.196.68, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
-  - {name: '🇺🇸_US_美国_64', server: 142.202.48.43, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
-  - {name: '🇺🇸_US_美国_65', server: 142.202.48.43, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
-  - {name: '🏁+ZZ_135', server: 134.195.196.3, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
-  - {name: '🇬🇧_GB_英国_67', server: 172.99.190.149, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
-  - {name: '🏁+ZZ_140', server: 134.195.198.252, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
-  - {name: '🇨🇦_CA_加拿大_69', server: 134.195.196.110, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
-  - {name: '🏁ZZ_138_11.59Mb', server: 134.195.198.252, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
-  - {name: '🇨🇦_CA_加拿大_71', server: 198.57.27.152, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
-  - {name: 'n__22.53Mb', server: 38.75.137.187, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
-  - {name: 'Relay_🇨🇦CA-🇨🇦CA_10_53.01Mb', server: usa-buffalo.lvuft.com, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, network: ws, ws-path: /ws}
-  - {name: '🇺🇸_US_美国_74', server: 142.202.48.43, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
-  - {name: '🇨🇦CA_212_135.06Mb', server: 198.57.27.152, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
-  - {name: '🇺🇸_US_美国_76', server: 142.202.48.43, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM}
-  - {name: '🇺🇸_US_美国_77', server: 142.202.48.105, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
-  - {name: 'n__13.88Mb', server: 134.195.196.154, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
-  - {name: 'n__13.13Mb', server: 167.88.63.61, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
-  - {name: '🇨🇦_CA_加拿大_80', server: 134.195.198.252, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
-  - {name: 'n__17.86Mb', server: 38.75.136.116, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
-  - {name: 'n__11.22Mb', server: 38.75.137.187, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
-  - {name: '🇨🇦_CA_加拿大_83', server: 134.195.196.154, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
-  - {name: '🇺🇸_US_美国_84', server: 142.202.48.43, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
-  - {name: 'n__15.49Mb', server: 134.195.196.199, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
-  - {name: '🇨🇦CA_177_56.09Mb', server: 198.57.27.218, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
-  - {name: '🇨🇦_CA_加拿大_87', server: 134.195.198.252, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
-  - {name: '🇨🇦 CA_10', server: 1030us.fans8.xyz, port: 80, type: vmess, uuid: 7ea3f9bb-2082-3d43-b825-6bf7a052314a, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /v2ray}
-  - {name: '🇨🇦_CA_加拿大_89', server: 134.195.196.199, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
-  - {name: 'SG_22', server: 81.90.189.18, port: 802, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
   - {name: '🇫🇷+FR_37', server: 145.239.1.137, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM}
-  - {name: '🇸🇬+SG_81', server: 217.197.161.244, port: 800, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
-  - {name: '🇺🇸+US_97', server: 172.99.190.149, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
-  - {name: '🇫🇮FI_339_46.78Mb', server: 188.126.89.174, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: SkGJxCjsuc8DJsB2GtM4}
-  - {name: 'Relay__+9.61Mb', server: t5.ssrsub.com, port: 8443, type: trojan, password: 0e13b5a9-cb62-44cd-b28e-47f137624694, sni: t5.ssrsub.com}
-  - {name: '🇨🇦_CA_加拿大_96', server: 134.195.196.3, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM}
-  - {name: '🏁+ZZ_130', server: 134.195.198.252, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
-  - {name: 'n__+8.62Mb', server: 172.107.233.230, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
-  - {name: '🇬🇧_GB_英国_99', server: 172.99.190.149, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
-  - {name: '🏁ZZ_142_56.41Mb', server: 134.195.196.110, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
-  - {name: '🇸🇬 SG_82', server: 8.214.46.152, port: 50885, type: vmess, uuid: d064d11b-477c-4c5d-a2d8-9fd599ef8e79, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /}
-  - {name: 'n__10.51Mb', server: 81.90.189.18, port: 809, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
-  - {name: 'n__15.21Mb', server: 38.75.136.45, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
-  - {name: '🇺🇸+US_94', server: 172.99.190.149, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
-  - {name: 'Relay_ | 9.65Mb_105', server: zhuzhu12.com, port: 10156, type: vmess, uuid: b66d502c-5d3a-381f-9e49-fe8afdac9968, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /zz, ws-headers: {Host: t.me/vpnhat}}
-  - {name: 'n__+9.75Mb', server: 134.195.196.199, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
-  - {name: 'n__12.12Mb', server: 38.68.134.191, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
-  - {name: '🇬🇧_GB_英国_108', server: 172.99.190.149, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
-  - {name: 'n__14.28Mb', server: 167.88.63.61, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
-  - {name: '🇺🇸US_82_98.94Mb', server: 172.107.233.230, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
-  - {name: '🇨🇦CA_175_90.29Mb', server: 198.57.27.218, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
+  - {name: '🇫🇷+FR_35', server: 145.239.1.137, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
+  - {name: '🇨🇳 CN_22', server: shcn2-06b.iplc188.com, port: 10001, type: vmess, uuid: 65cac56d-4155-43c8-bae0-f368cb21f771, alterId: 1, cipher: auto, tls: false, network: tcp, ws-path: /}
   - {name: 'DE_9', server: 146.0.36.23, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
-  - {name: '🇺🇸_US_美国_113', server: 38.68.134.191, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
-  - {name: '🇫🇷+FR_41', server: 145.239.1.137, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
-  - {name: 'n__10.52Mb', server: 167.88.63.61, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
-  - {name: '🇨🇦CA_183_10.95Mb', server: 71.19.249.109, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: QBLw4rLXQ6ebxpWwSKDL}
-  - {name: '🇨🇦+CA_04', server: 198.57.27.218, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
-  - {name: '🇨🇦CA_165_28.24Mb', server: 198.57.27.218, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
+  - {name: 'Relay_🇨🇳CN-🇺🇸US_257 | 5.23Mb', server: shcn2-06b.iplc188.com, port: 10002, type: vmess, uuid: 65cac56d-4155-43c8-bae0-f368cb21f771, alterId: 1, cipher: auto, tls: false, network: tcp, ws-path: /, ws-headers: {Host: shcn2-06b.iplc188.com}}
+  - {name: 'n__25.78Mb', server: 38.75.136.45, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
+  - {name: '🇨🇦_CA_加拿大_8', server: 134.195.196.154, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
+  - {name: '🇺🇸 US_132', server: zhuzhu12.com, port: 10156, type: vmess, uuid: b66d502c-5d3a-381f-9e49-fe8afdac9968, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /zz}
+  - {name: '🇯🇵JP_156', server: 172.104.98.216, port: 80, type: vmess, uuid: e5af0cad-295c-37b2-b601-f35d13f6b1bb, alterId: 64, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: www.gov.hk}}
+  - {name: '🇺🇸 US_120', server: 20.205.35.3, port: 10313, type: vmess, uuid: cff2a52c-1b98-31a0-b508-9255882c45ec, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /niaocloud}
+  - {name: '🇸🇬 SG_82', server: 8.214.46.152, port: 50885, type: vmess, uuid: d064d11b-477c-4c5d-a2d8-9fd599ef8e79, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /}
+  - {name: 'Relay__+9.61Mb', server: t5.ssrsub.com, port: 8443, type: trojan, password: 0e13b5a9-cb62-44cd-b28e-47f137624694, sni: t5.ssrsub.com}
   - {name: '🇩🇪DE_24_33.83Mb', server: 146.0.36.23, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
-  - {name: '🏁+ZZ_138', server: 134.195.196.3, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
+  - {name: '🇨🇦 CA_05', server: 1116yn.fans8.xyz, port: 80, type: vmess, uuid: 7ea3f9bb-2082-3d43-b825-6bf7a052314a, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /v2ray}
+  - {name: '🇫🇷+FR_41', server: 145.239.1.137, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
+  - {name: 'Relay_🇨🇦CA-🇨🇦CA_10_53.01Mb', server: usa-buffalo.lvuft.com, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, network: ws, ws-path: /ws}
+  - {name: '🏁+ZZ_135', server: 134.195.196.3, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
+  - {name: 'n__22.12Mb', server: 38.114.114.68, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
+  - {name: '🇺🇸_US_美国_20', server: 167.88.61.130, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
+  - {name: 'n__11.20Mb', server: 167.88.61.130, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
+  - {name: '🇫🇷+FR_39', server: 145.239.1.137, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
+  - {name: '🇯🇵 JP_62', server: 172.104.98.216, port: 80, type: vmess, uuid: e5af0cad-295c-37b2-b601-f35d13f6b1bb, alterId: 64, cipher: auto, tls: false, network: ws, ws-path: /}
+  - {name: '🇸🇬+SG_81', server: 217.197.161.244, port: 800, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
+  - {name: 'n__15.35Mb', server: 38.75.137.187, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
+  - {name: 'US_46', server: 38.68.134.191, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: 'n__+8.93Mb', server: 38.68.134.191, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
+  - {name: 'n__22.53Mb', server: 38.75.137.187, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
+  - {name: 'n__11.55Mb', server: 38.75.137.187, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
+  - {name: 'n__21.71Mb', server: 38.75.137.187, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
+  - {name: '🇺🇸_US_美国_31', server: 38.68.134.191, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
+  - {name: 'n__12.12Mb', server: 38.68.134.191, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
+  - {name: 'n__10.52Mb', server: 167.88.63.61, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
+  - {name: 'FR_12', server: 145.239.1.137, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: 'n__11.22Mb', server: 38.75.137.187, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+  - {name: 'n__14.28Mb', server: 167.88.63.61, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
+  - {name: 'n__14.75Mb', server: 167.88.63.61, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+  - {name: 'n__14.41Mb', server: 167.88.63.61, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: 'n__15.41Mb', server: 38.68.134.191, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM}
+  - {name: 'n__13.05Mb', server: 167.88.63.61, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
+  - {name: 'US_45', server: 167.88.63.61, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
+  - {name: 'n__12.81Mb', server: 167.88.63.61, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
+  - {name: 'n__13.13Mb', server: 167.88.63.61, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
+  - {name: '🇨🇦_CA_加拿大_44', server: 134.195.196.154, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
+  - {name: '🏁+ZZ_147', server: 134.195.196.154, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
+  - {name: '🏁+ZZ_118', server: 134.195.196.154, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
+  - {name: 'n__13.88Mb', server: 134.195.196.154, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
+  - {name: '🇨🇦CA_156_164.19Mb', server: 198.57.27.152, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM}
+  - {name: '🇨🇦CA_187_115.39Mb', server: 198.57.27.152, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
+  - {name: 'n__17.38Mb', server: 38.75.136.45, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
+  - {name: 'n__23.52Mb', server: 38.75.136.45, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM}
+  - {name: '🇨🇦_CA_加拿大_52', server: 198.57.27.152, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
+  - {name: 'n__17.01Mb', server: 142.202.48.43, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: '🇨🇦CA_222_170.79Mb', server: 198.57.27.152, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
+  - {name: '🇺🇸_US_美国_55', server: 142.202.48.105, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
+  - {name: 'n__19.91Mb', server: 134.195.196.199, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
+  - {name: 'n__15.49Mb', server: 134.195.196.199, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: 'n__16.78Mb', server: 38.75.136.45, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
+  - {name: 'n__10.01Mb', server: 38.75.136.45, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
+  - {name: '🇺🇸_US_美国_60', server: 142.202.48.43, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: '🇺🇸_US_美国_61', server: 142.202.48.43, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
+  - {name: '🇨🇦CA_212_135.06Mb', server: 198.57.27.152, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
+  - {name: 'n__15.21Mb', server: 38.75.136.45, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+  - {name: '🇺🇸_US_美国_64', server: 38.75.136.45, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: '🇺🇸_US_美国_65', server: 142.202.48.43, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM}
+  - {name: '🇺🇸_US_美国_66', server: 142.202.48.43, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+  - {name: 'US_28', server: 142.202.48.43, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
+  - {name: '🇺🇸_US_美国_68', server: 142.202.48.43, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
+  - {name: '🇨🇦_CA_加拿大_69', server: 134.195.196.199, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
+  - {name: 'n__19.18Mb', server: 134.195.196.68, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
+  - {name: '🇺🇸+US_113', server: 38.68.134.202, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+  - {name: 'n__10.83Mb', server: 142.202.48.43, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+  - {name: '🏁+ZZ_151', server: 134.195.196.68, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
+  - {name: '🇨🇦_CA_加拿大_74', server: 198.57.27.152, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
+  - {name: 'n__+9.75Mb', server: 134.195.196.199, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+  - {name: '🇨🇦CA_200_108.05Mb', server: 198.57.27.152, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: '🇨🇦CA_248_60.91Mb', server: 198.57.27.152, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+  - {name: '🇨🇦_CA_加拿大_78', server: 134.195.198.252, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
+  - {name: '🏁+ZZ_140', server: 134.195.198.252, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: '🇨🇦_CA_加拿大_80', server: 134.195.198.252, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
+  - {name: 'n__17.42Mb', server: 38.75.136.58, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
+  - {name: '🏁+ZZ_130', server: 134.195.198.252, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
+  - {name: 'n__+9.17Mb', server: 38.75.136.58, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
+  - {name: 'n__21.89Mb', server: 38.75.136.58, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
+  - {name: 'n__26.04Mb', server: 38.75.136.58, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
+  - {name: 'Relay_ | 9.65Mb_86', server: zhuzhu12.com, port: 10156, type: vmess, uuid: b66d502c-5d3a-381f-9e49-fe8afdac9968, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /zz, ws-headers: {Host: t.me/vpnhat}}
+  - {name: 'n__17.83Mb', server: 38.75.136.58, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
+  - {name: '🇳🇴NO_628_12.28Mb', server: 46.29.218.6, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
+  - {name: 'n__26_+8.49Mb', server: 46.29.218.6, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: '🇨🇦CA_175_90.29Mb', server: 198.57.27.218, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
+  - {name: '🇨🇦+CA_04', server: 198.57.27.218, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: '🇺🇸+US_97', server: 172.99.190.149, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
+  - {name: '🇬🇧_GB_英国_93', server: 172.99.190.149, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
+  - {name: 'n__+8.28Mb', server: 172.99.190.149, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇯🇵JP_560 |17.32Mb
       - ZZ_47
-      - Relay_🏁ZZ-🏁ZZ_155_ 8.35Mb
-      - n__15.35Mb
-      - Relay_🇨🇳CN-🇺🇸US_257 | 5.23Mb
-      - 🇨🇦CA_187_115.39Mb
-      - n__23.31Mb
-      - n__+8.28Mb
-      - n__11.20Mb
-      - n__+9.17Mb
-      - 🇺🇸_US_美国_11
-      - 🇺🇸_US_美国_12
-      - n__10.83Mb
-      - 🇨🇦CA_200_108.05Mb
-      - ZZ_48
-      - n__16.78Mb
-      - n__17.01Mb
-      - n__12.42Mb
-      - n__21.71Mb
-      - n__22.12Mb
-      - n__10.01Mb
-      - 🇺🇸_US_美国_22
-      - 🏁+ZZ_118
-      - n__19.18Mb
-      - n__17.38Mb
-      - n__21.89Mb
-      - n__23.52Mb
-      - FR_12
-      - 🇺🇸+US_95
-      - 🇫🇷+FR_39
-      - n__+9.07Mb
-      - n__26_+8.49Mb
-      - n__15.41Mb
-      - 🇨🇦_CA_加拿大_34
-      - n__18.23Mb
-      - n__25.78Mb
-      - n__10.36Mb
-      - 🇨🇳 CN_22
-      - n__17.83Mb
-      - n__19.91Mb
-      - CA_3
-      - n__14.75Mb
-      - 🇨🇦+CA_03
-      - 🇺🇸_US_美国_44
-      - n__+8.93Mb
-      - n__+8.09Mb
-      - n__17.42Mb
-      - 🇨🇦CA_248_60.91Mb
-      - 🇨🇦CA_156_164.19Mb
-      - 🇺🇸_US_美国_50
-      - 🇨🇦_CA_加拿大_51
-      - n__12.81Mb
-      - 🇯🇵JP_156
-      - n__26.04Mb
-      - 🇳🇴NO_628_12.28Mb
-      - 🇯🇵 JP_54
-      - 🇺🇸_US_美国_57
-      - n__13.05Mb
-      - n__14.41Mb
-      - n__11.55Mb
+      - 🇫🇷+FR_37
       - 🇫🇷+FR_35
+      - 🇨🇳 CN_22
+      - DE_9
+      - Relay_🇨🇳CN-🇺🇸US_257 | 5.23Mb
+      - n__25.78Mb
+      - 🇨🇦_CA_加拿大_8
+      - 🇺🇸 US_132
+      - 🇯🇵JP_156
+      - 🇺🇸 US_120
+      - 🇸🇬 SG_82
+      - Relay__+9.61Mb
+      - 🇩🇪DE_24_33.83Mb
+      - 🇨🇦 CA_05
+      - 🇫🇷+FR_41
+      - Relay_🇨🇦CA-🇨🇦CA_10_53.01Mb
+      - 🏁+ZZ_135
+      - n__22.12Mb
+      - 🇺🇸_US_美国_20
+      - n__11.20Mb
+      - 🇫🇷+FR_39
+      - 🇯🇵 JP_62
+      - 🇸🇬+SG_81
+      - n__15.35Mb
+      - US_46
+      - n__+8.93Mb
+      - n__22.53Mb
+      - n__11.55Mb
+      - n__21.71Mb
+      - 🇺🇸_US_美国_31
+      - n__12.12Mb
+      - n__10.52Mb
+      - FR_12
+      - n__11.22Mb
+      - n__14.28Mb
+      - n__14.75Mb
+      - n__14.41Mb
+      - n__15.41Mb
+      - n__13.05Mb
+      - US_45
+      - n__12.81Mb
+      - n__13.13Mb
+      - 🇨🇦_CA_加拿大_44
+      - 🏁+ZZ_147
+      - 🏁+ZZ_118
+      - n__13.88Mb
+      - 🇨🇦CA_156_164.19Mb
+      - 🇨🇦CA_187_115.39Mb
+      - n__17.38Mb
+      - n__23.52Mb
+      - 🇨🇦_CA_加拿大_52
+      - n__17.01Mb
       - 🇨🇦CA_222_170.79Mb
-      - n__16.27Mb
+      - 🇺🇸_US_美国_55
+      - n__19.91Mb
+      - n__15.49Mb
+      - n__16.78Mb
+      - n__10.01Mb
+      - 🇺🇸_US_美国_60
+      - 🇺🇸_US_美国_61
+      - 🇨🇦CA_212_135.06Mb
+      - n__15.21Mb
       - 🇺🇸_US_美国_64
       - 🇺🇸_US_美国_65
-      - 🏁+ZZ_135
-      - 🇬🇧_GB_英国_67
-      - 🏁+ZZ_140
+      - 🇺🇸_US_美国_66
+      - US_28
+      - 🇺🇸_US_美国_68
       - 🇨🇦_CA_加拿大_69
-      - 🏁ZZ_138_11.59Mb
-      - 🇨🇦_CA_加拿大_71
-      - n__22.53Mb
-      - Relay_🇨🇦CA-🇨🇦CA_10_53.01Mb
-      - 🇺🇸_US_美国_74
-      - 🇨🇦CA_212_135.06Mb
-      - 🇺🇸_US_美国_76
-      - 🇺🇸_US_美国_77
-      - n__13.88Mb
-      - n__13.13Mb
-      - 🇨🇦_CA_加拿大_80
-      - n__17.86Mb
-      - n__11.22Mb
-      - 🇨🇦_CA_加拿大_83
-      - 🇺🇸_US_美国_84
-      - n__15.49Mb
-      - 🇨🇦CA_177_56.09Mb
-      - 🇨🇦_CA_加拿大_87
-      - 🇨🇦 CA_10
-      - 🇨🇦_CA_加拿大_89
-      - SG_22
-      - 🇫🇷+FR_37
-      - 🇸🇬+SG_81
-      - 🇺🇸+US_97
-      - 🇫🇮FI_339_46.78Mb
-      - Relay__+9.61Mb
-      - 🇨🇦_CA_加拿大_96
-      - 🏁+ZZ_130
-      - n__+8.62Mb
-      - 🇬🇧_GB_英国_99
-      - 🏁ZZ_142_56.41Mb
-      - 🇸🇬 SG_82
-      - n__10.51Mb
-      - n__15.21Mb
-      - 🇺🇸+US_94
-      - Relay_ | 9.65Mb_105
+      - n__19.18Mb
+      - 🇺🇸+US_113
+      - n__10.83Mb
+      - 🏁+ZZ_151
+      - 🇨🇦_CA_加拿大_74
       - n__+9.75Mb
-      - n__12.12Mb
-      - 🇬🇧_GB_英国_108
-      - n__14.28Mb
-      - 🇺🇸US_82_98.94Mb
+      - 🇨🇦CA_200_108.05Mb
+      - 🇨🇦CA_248_60.91Mb
+      - 🇨🇦_CA_加拿大_78
+      - 🏁+ZZ_140
+      - 🇨🇦_CA_加拿大_80
+      - n__17.42Mb
+      - 🏁+ZZ_130
+      - n__+9.17Mb
+      - n__21.89Mb
+      - n__26.04Mb
+      - Relay_ | 9.65Mb_86
+      - n__17.83Mb
+      - 🇳🇴NO_628_12.28Mb
+      - n__26_+8.49Mb
       - 🇨🇦CA_175_90.29Mb
-      - DE_9
-      - 🇺🇸_US_美国_113
-      - 🇫🇷+FR_41
-      - n__10.52Mb
-      - 🇨🇦CA_183_10.95Mb
       - 🇨🇦+CA_04
-      - 🇨🇦CA_165_28.24Mb
-      - 🇩🇪DE_24_33.83Mb
-      - 🏁+ZZ_138
+      - 🇺🇸+US_97
+      - 🇬🇧_GB_英国_93
+      - n__+8.28Mb
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 🇯🇵JP_560 |17.32Mb
       - ZZ_47
-      - Relay_🏁ZZ-🏁ZZ_155_ 8.35Mb
-      - n__15.35Mb
-      - Relay_🇨🇳CN-🇺🇸US_257 | 5.23Mb
-      - 🇨🇦CA_187_115.39Mb
-      - n__23.31Mb
-      - n__+8.28Mb
-      - n__11.20Mb
-      - n__+9.17Mb
-      - 🇺🇸_US_美国_11
-      - 🇺🇸_US_美国_12
-      - n__10.83Mb
-      - 🇨🇦CA_200_108.05Mb
-      - ZZ_48
-      - n__16.78Mb
-      - n__17.01Mb
-      - n__12.42Mb
-      - n__21.71Mb
-      - n__22.12Mb
-      - n__10.01Mb
-      - 🇺🇸_US_美国_22
-      - 🏁+ZZ_118
-      - n__19.18Mb
-      - n__17.38Mb
-      - n__21.89Mb
-      - n__23.52Mb
-      - FR_12
-      - 🇺🇸+US_95
-      - 🇫🇷+FR_39
-      - n__+9.07Mb
-      - n__26_+8.49Mb
-      - n__15.41Mb
-      - 🇨🇦_CA_加拿大_34
-      - n__18.23Mb
-      - n__25.78Mb
-      - n__10.36Mb
-      - 🇨🇳 CN_22
-      - n__17.83Mb
-      - n__19.91Mb
-      - CA_3
-      - n__14.75Mb
-      - 🇨🇦+CA_03
-      - 🇺🇸_US_美国_44
-      - n__+8.93Mb
-      - n__+8.09Mb
-      - n__17.42Mb
-      - 🇨🇦CA_248_60.91Mb
-      - 🇨🇦CA_156_164.19Mb
-      - 🇺🇸_US_美国_50
-      - 🇨🇦_CA_加拿大_51
-      - n__12.81Mb
-      - 🇯🇵JP_156
-      - n__26.04Mb
-      - 🇳🇴NO_628_12.28Mb
-      - 🇯🇵 JP_54
-      - 🇺🇸_US_美国_57
-      - n__13.05Mb
-      - n__14.41Mb
-      - n__11.55Mb
+      - 🇫🇷+FR_37
       - 🇫🇷+FR_35
+      - 🇨🇳 CN_22
+      - DE_9
+      - Relay_🇨🇳CN-🇺🇸US_257 | 5.23Mb
+      - n__25.78Mb
+      - 🇨🇦_CA_加拿大_8
+      - 🇺🇸 US_132
+      - 🇯🇵JP_156
+      - 🇺🇸 US_120
+      - 🇸🇬 SG_82
+      - Relay__+9.61Mb
+      - 🇩🇪DE_24_33.83Mb
+      - 🇨🇦 CA_05
+      - 🇫🇷+FR_41
+      - Relay_🇨🇦CA-🇨🇦CA_10_53.01Mb
+      - 🏁+ZZ_135
+      - n__22.12Mb
+      - 🇺🇸_US_美国_20
+      - n__11.20Mb
+      - 🇫🇷+FR_39
+      - 🇯🇵 JP_62
+      - 🇸🇬+SG_81
+      - n__15.35Mb
+      - US_46
+      - n__+8.93Mb
+      - n__22.53Mb
+      - n__11.55Mb
+      - n__21.71Mb
+      - 🇺🇸_US_美国_31
+      - n__12.12Mb
+      - n__10.52Mb
+      - FR_12
+      - n__11.22Mb
+      - n__14.28Mb
+      - n__14.75Mb
+      - n__14.41Mb
+      - n__15.41Mb
+      - n__13.05Mb
+      - US_45
+      - n__12.81Mb
+      - n__13.13Mb
+      - 🇨🇦_CA_加拿大_44
+      - 🏁+ZZ_147
+      - 🏁+ZZ_118
+      - n__13.88Mb
+      - 🇨🇦CA_156_164.19Mb
+      - 🇨🇦CA_187_115.39Mb
+      - n__17.38Mb
+      - n__23.52Mb
+      - 🇨🇦_CA_加拿大_52
+      - n__17.01Mb
       - 🇨🇦CA_222_170.79Mb
-      - n__16.27Mb
+      - 🇺🇸_US_美国_55
+      - n__19.91Mb
+      - n__15.49Mb
+      - n__16.78Mb
+      - n__10.01Mb
+      - 🇺🇸_US_美国_60
+      - 🇺🇸_US_美国_61
+      - 🇨🇦CA_212_135.06Mb
+      - n__15.21Mb
       - 🇺🇸_US_美国_64
       - 🇺🇸_US_美国_65
-      - 🏁+ZZ_135
-      - 🇬🇧_GB_英国_67
-      - 🏁+ZZ_140
+      - 🇺🇸_US_美国_66
+      - US_28
+      - 🇺🇸_US_美国_68
       - 🇨🇦_CA_加拿大_69
-      - 🏁ZZ_138_11.59Mb
-      - 🇨🇦_CA_加拿大_71
-      - n__22.53Mb
-      - Relay_🇨🇦CA-🇨🇦CA_10_53.01Mb
-      - 🇺🇸_US_美国_74
-      - 🇨🇦CA_212_135.06Mb
-      - 🇺🇸_US_美国_76
-      - 🇺🇸_US_美国_77
-      - n__13.88Mb
-      - n__13.13Mb
-      - 🇨🇦_CA_加拿大_80
-      - n__17.86Mb
-      - n__11.22Mb
-      - 🇨🇦_CA_加拿大_83
-      - 🇺🇸_US_美国_84
-      - n__15.49Mb
-      - 🇨🇦CA_177_56.09Mb
-      - 🇨🇦_CA_加拿大_87
-      - 🇨🇦 CA_10
-      - 🇨🇦_CA_加拿大_89
-      - SG_22
-      - 🇫🇷+FR_37
-      - 🇸🇬+SG_81
-      - 🇺🇸+US_97
-      - 🇫🇮FI_339_46.78Mb
-      - Relay__+9.61Mb
-      - 🇨🇦_CA_加拿大_96
-      - 🏁+ZZ_130
-      - n__+8.62Mb
-      - 🇬🇧_GB_英国_99
-      - 🏁ZZ_142_56.41Mb
-      - 🇸🇬 SG_82
-      - n__10.51Mb
-      - n__15.21Mb
-      - 🇺🇸+US_94
-      - Relay_ | 9.65Mb_105
+      - n__19.18Mb
+      - 🇺🇸+US_113
+      - n__10.83Mb
+      - 🏁+ZZ_151
+      - 🇨🇦_CA_加拿大_74
       - n__+9.75Mb
-      - n__12.12Mb
-      - 🇬🇧_GB_英国_108
-      - n__14.28Mb
-      - 🇺🇸US_82_98.94Mb
+      - 🇨🇦CA_200_108.05Mb
+      - 🇨🇦CA_248_60.91Mb
+      - 🇨🇦_CA_加拿大_78
+      - 🏁+ZZ_140
+      - 🇨🇦_CA_加拿大_80
+      - n__17.42Mb
+      - 🏁+ZZ_130
+      - n__+9.17Mb
+      - n__21.89Mb
+      - n__26.04Mb
+      - Relay_ | 9.65Mb_86
+      - n__17.83Mb
+      - 🇳🇴NO_628_12.28Mb
+      - n__26_+8.49Mb
       - 🇨🇦CA_175_90.29Mb
-      - DE_9
-      - 🇺🇸_US_美国_113
-      - 🇫🇷+FR_41
-      - n__10.52Mb
-      - 🇨🇦CA_183_10.95Mb
       - 🇨🇦+CA_04
-      - 🇨🇦CA_165_28.24Mb
-      - 🇩🇪DE_24_33.83Mb
-      - 🏁+ZZ_138
+      - 🇺🇸+US_97
+      - 🇬🇧_GB_英国_93
+      - n__+8.28Mb
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇯🇵JP_560 |17.32Mb
       - ZZ_47
-      - Relay_🏁ZZ-🏁ZZ_155_ 8.35Mb
-      - n__15.35Mb
-      - Relay_🇨🇳CN-🇺🇸US_257 | 5.23Mb
-      - 🇨🇦CA_187_115.39Mb
-      - n__23.31Mb
-      - n__+8.28Mb
-      - n__11.20Mb
-      - n__+9.17Mb
-      - 🇺🇸_US_美国_11
-      - 🇺🇸_US_美国_12
-      - n__10.83Mb
-      - 🇨🇦CA_200_108.05Mb
-      - ZZ_48
-      - n__16.78Mb
-      - n__17.01Mb
-      - n__12.42Mb
-      - n__21.71Mb
-      - n__22.12Mb
-      - n__10.01Mb
-      - 🇺🇸_US_美国_22
-      - 🏁+ZZ_118
-      - n__19.18Mb
-      - n__17.38Mb
-      - n__21.89Mb
-      - n__23.52Mb
-      - FR_12
-      - 🇺🇸+US_95
-      - 🇫🇷+FR_39
-      - n__+9.07Mb
-      - n__26_+8.49Mb
-      - n__15.41Mb
-      - 🇨🇦_CA_加拿大_34
-      - n__18.23Mb
-      - n__25.78Mb
-      - n__10.36Mb
-      - 🇨🇳 CN_22
-      - n__17.83Mb
-      - n__19.91Mb
-      - CA_3
-      - n__14.75Mb
-      - 🇨🇦+CA_03
-      - 🇺🇸_US_美国_44
-      - n__+8.93Mb
-      - n__+8.09Mb
-      - n__17.42Mb
-      - 🇨🇦CA_248_60.91Mb
-      - 🇨🇦CA_156_164.19Mb
-      - 🇺🇸_US_美国_50
-      - 🇨🇦_CA_加拿大_51
-      - n__12.81Mb
-      - 🇯🇵JP_156
-      - n__26.04Mb
-      - 🇳🇴NO_628_12.28Mb
-      - 🇯🇵 JP_54
-      - 🇺🇸_US_美国_57
-      - n__13.05Mb
-      - n__14.41Mb
-      - n__11.55Mb
+      - 🇫🇷+FR_37
       - 🇫🇷+FR_35
+      - 🇨🇳 CN_22
+      - DE_9
+      - Relay_🇨🇳CN-🇺🇸US_257 | 5.23Mb
+      - n__25.78Mb
+      - 🇨🇦_CA_加拿大_8
+      - 🇺🇸 US_132
+      - 🇯🇵JP_156
+      - 🇺🇸 US_120
+      - 🇸🇬 SG_82
+      - Relay__+9.61Mb
+      - 🇩🇪DE_24_33.83Mb
+      - 🇨🇦 CA_05
+      - 🇫🇷+FR_41
+      - Relay_🇨🇦CA-🇨🇦CA_10_53.01Mb
+      - 🏁+ZZ_135
+      - n__22.12Mb
+      - 🇺🇸_US_美国_20
+      - n__11.20Mb
+      - 🇫🇷+FR_39
+      - 🇯🇵 JP_62
+      - 🇸🇬+SG_81
+      - n__15.35Mb
+      - US_46
+      - n__+8.93Mb
+      - n__22.53Mb
+      - n__11.55Mb
+      - n__21.71Mb
+      - 🇺🇸_US_美国_31
+      - n__12.12Mb
+      - n__10.52Mb
+      - FR_12
+      - n__11.22Mb
+      - n__14.28Mb
+      - n__14.75Mb
+      - n__14.41Mb
+      - n__15.41Mb
+      - n__13.05Mb
+      - US_45
+      - n__12.81Mb
+      - n__13.13Mb
+      - 🇨🇦_CA_加拿大_44
+      - 🏁+ZZ_147
+      - 🏁+ZZ_118
+      - n__13.88Mb
+      - 🇨🇦CA_156_164.19Mb
+      - 🇨🇦CA_187_115.39Mb
+      - n__17.38Mb
+      - n__23.52Mb
+      - 🇨🇦_CA_加拿大_52
+      - n__17.01Mb
       - 🇨🇦CA_222_170.79Mb
-      - n__16.27Mb
+      - 🇺🇸_US_美国_55
+      - n__19.91Mb
+      - n__15.49Mb
+      - n__16.78Mb
+      - n__10.01Mb
+      - 🇺🇸_US_美国_60
+      - 🇺🇸_US_美国_61
+      - 🇨🇦CA_212_135.06Mb
+      - n__15.21Mb
       - 🇺🇸_US_美国_64
       - 🇺🇸_US_美国_65
-      - 🏁+ZZ_135
-      - 🇬🇧_GB_英国_67
-      - 🏁+ZZ_140
+      - 🇺🇸_US_美国_66
+      - US_28
+      - 🇺🇸_US_美国_68
       - 🇨🇦_CA_加拿大_69
-      - 🏁ZZ_138_11.59Mb
-      - 🇨🇦_CA_加拿大_71
-      - n__22.53Mb
-      - Relay_🇨🇦CA-🇨🇦CA_10_53.01Mb
-      - 🇺🇸_US_美国_74
-      - 🇨🇦CA_212_135.06Mb
-      - 🇺🇸_US_美国_76
-      - 🇺🇸_US_美国_77
-      - n__13.88Mb
-      - n__13.13Mb
-      - 🇨🇦_CA_加拿大_80
-      - n__17.86Mb
-      - n__11.22Mb
-      - 🇨🇦_CA_加拿大_83
-      - 🇺🇸_US_美国_84
-      - n__15.49Mb
-      - 🇨🇦CA_177_56.09Mb
-      - 🇨🇦_CA_加拿大_87
-      - 🇨🇦 CA_10
-      - 🇨🇦_CA_加拿大_89
-      - SG_22
-      - 🇫🇷+FR_37
-      - 🇸🇬+SG_81
-      - 🇺🇸+US_97
-      - 🇫🇮FI_339_46.78Mb
-      - Relay__+9.61Mb
-      - 🇨🇦_CA_加拿大_96
-      - 🏁+ZZ_130
-      - n__+8.62Mb
-      - 🇬🇧_GB_英国_99
-      - 🏁ZZ_142_56.41Mb
-      - 🇸🇬 SG_82
-      - n__10.51Mb
-      - n__15.21Mb
-      - 🇺🇸+US_94
-      - Relay_ | 9.65Mb_105
+      - n__19.18Mb
+      - 🇺🇸+US_113
+      - n__10.83Mb
+      - 🏁+ZZ_151
+      - 🇨🇦_CA_加拿大_74
       - n__+9.75Mb
-      - n__12.12Mb
-      - 🇬🇧_GB_英国_108
-      - n__14.28Mb
-      - 🇺🇸US_82_98.94Mb
+      - 🇨🇦CA_200_108.05Mb
+      - 🇨🇦CA_248_60.91Mb
+      - 🇨🇦_CA_加拿大_78
+      - 🏁+ZZ_140
+      - 🇨🇦_CA_加拿大_80
+      - n__17.42Mb
+      - 🏁+ZZ_130
+      - n__+9.17Mb
+      - n__21.89Mb
+      - n__26.04Mb
+      - Relay_ | 9.65Mb_86
+      - n__17.83Mb
+      - 🇳🇴NO_628_12.28Mb
+      - n__26_+8.49Mb
       - 🇨🇦CA_175_90.29Mb
-      - DE_9
-      - 🇺🇸_US_美国_113
-      - 🇫🇷+FR_41
-      - n__10.52Mb
-      - 🇨🇦CA_183_10.95Mb
       - 🇨🇦+CA_04
-      - 🇨🇦CA_165_28.24Mb
-      - 🇩🇪DE_24_33.83Mb
-      - 🏁+ZZ_138
+      - 🇺🇸+US_97
+      - 🇬🇧_GB_英国_93
+      - n__+8.28Mb
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 🇯🇵JP_560 |17.32Mb
       - ZZ_47
-      - Relay_🏁ZZ-🏁ZZ_155_ 8.35Mb
-      - n__15.35Mb
-      - Relay_🇨🇳CN-🇺🇸US_257 | 5.23Mb
-      - 🇨🇦CA_187_115.39Mb
-      - n__23.31Mb
-      - n__+8.28Mb
-      - n__11.20Mb
-      - n__+9.17Mb
-      - 🇺🇸_US_美国_11
-      - 🇺🇸_US_美国_12
-      - n__10.83Mb
-      - 🇨🇦CA_200_108.05Mb
-      - ZZ_48
-      - n__16.78Mb
-      - n__17.01Mb
-      - n__12.42Mb
-      - n__21.71Mb
-      - n__22.12Mb
-      - n__10.01Mb
-      - 🇺🇸_US_美国_22
-      - 🏁+ZZ_118
-      - n__19.18Mb
-      - n__17.38Mb
-      - n__21.89Mb
-      - n__23.52Mb
-      - FR_12
-      - 🇺🇸+US_95
-      - 🇫🇷+FR_39
-      - n__+9.07Mb
-      - n__26_+8.49Mb
-      - n__15.41Mb
-      - 🇨🇦_CA_加拿大_34
-      - n__18.23Mb
-      - n__25.78Mb
-      - n__10.36Mb
-      - 🇨🇳 CN_22
-      - n__17.83Mb
-      - n__19.91Mb
-      - CA_3
-      - n__14.75Mb
-      - 🇨🇦+CA_03
-      - 🇺🇸_US_美国_44
-      - n__+8.93Mb
-      - n__+8.09Mb
-      - n__17.42Mb
-      - 🇨🇦CA_248_60.91Mb
-      - 🇨🇦CA_156_164.19Mb
-      - 🇺🇸_US_美国_50
-      - 🇨🇦_CA_加拿大_51
-      - n__12.81Mb
-      - 🇯🇵JP_156
-      - n__26.04Mb
-      - 🇳🇴NO_628_12.28Mb
-      - 🇯🇵 JP_54
-      - 🇺🇸_US_美国_57
-      - n__13.05Mb
-      - n__14.41Mb
-      - n__11.55Mb
+      - 🇫🇷+FR_37
       - 🇫🇷+FR_35
+      - 🇨🇳 CN_22
+      - DE_9
+      - Relay_🇨🇳CN-🇺🇸US_257 | 5.23Mb
+      - n__25.78Mb
+      - 🇨🇦_CA_加拿大_8
+      - 🇺🇸 US_132
+      - 🇯🇵JP_156
+      - 🇺🇸 US_120
+      - 🇸🇬 SG_82
+      - Relay__+9.61Mb
+      - 🇩🇪DE_24_33.83Mb
+      - 🇨🇦 CA_05
+      - 🇫🇷+FR_41
+      - Relay_🇨🇦CA-🇨🇦CA_10_53.01Mb
+      - 🏁+ZZ_135
+      - n__22.12Mb
+      - 🇺🇸_US_美国_20
+      - n__11.20Mb
+      - 🇫🇷+FR_39
+      - 🇯🇵 JP_62
+      - 🇸🇬+SG_81
+      - n__15.35Mb
+      - US_46
+      - n__+8.93Mb
+      - n__22.53Mb
+      - n__11.55Mb
+      - n__21.71Mb
+      - 🇺🇸_US_美国_31
+      - n__12.12Mb
+      - n__10.52Mb
+      - FR_12
+      - n__11.22Mb
+      - n__14.28Mb
+      - n__14.75Mb
+      - n__14.41Mb
+      - n__15.41Mb
+      - n__13.05Mb
+      - US_45
+      - n__12.81Mb
+      - n__13.13Mb
+      - 🇨🇦_CA_加拿大_44
+      - 🏁+ZZ_147
+      - 🏁+ZZ_118
+      - n__13.88Mb
+      - 🇨🇦CA_156_164.19Mb
+      - 🇨🇦CA_187_115.39Mb
+      - n__17.38Mb
+      - n__23.52Mb
+      - 🇨🇦_CA_加拿大_52
+      - n__17.01Mb
       - 🇨🇦CA_222_170.79Mb
-      - n__16.27Mb
+      - 🇺🇸_US_美国_55
+      - n__19.91Mb
+      - n__15.49Mb
+      - n__16.78Mb
+      - n__10.01Mb
+      - 🇺🇸_US_美国_60
+      - 🇺🇸_US_美国_61
+      - 🇨🇦CA_212_135.06Mb
+      - n__15.21Mb
       - 🇺🇸_US_美国_64
       - 🇺🇸_US_美国_65
-      - 🏁+ZZ_135
-      - 🇬🇧_GB_英国_67
-      - 🏁+ZZ_140
+      - 🇺🇸_US_美国_66
+      - US_28
+      - 🇺🇸_US_美国_68
       - 🇨🇦_CA_加拿大_69
-      - 🏁ZZ_138_11.59Mb
-      - 🇨🇦_CA_加拿大_71
-      - n__22.53Mb
-      - Relay_🇨🇦CA-🇨🇦CA_10_53.01Mb
-      - 🇺🇸_US_美国_74
-      - 🇨🇦CA_212_135.06Mb
-      - 🇺🇸_US_美国_76
-      - 🇺🇸_US_美国_77
-      - n__13.88Mb
-      - n__13.13Mb
-      - 🇨🇦_CA_加拿大_80
-      - n__17.86Mb
-      - n__11.22Mb
-      - 🇨🇦_CA_加拿大_83
-      - 🇺🇸_US_美国_84
-      - n__15.49Mb
-      - 🇨🇦CA_177_56.09Mb
-      - 🇨🇦_CA_加拿大_87
-      - 🇨🇦 CA_10
-      - 🇨🇦_CA_加拿大_89
-      - SG_22
-      - 🇫🇷+FR_37
-      - 🇸🇬+SG_81
-      - 🇺🇸+US_97
-      - 🇫🇮FI_339_46.78Mb
-      - Relay__+9.61Mb
-      - 🇨🇦_CA_加拿大_96
-      - 🏁+ZZ_130
-      - n__+8.62Mb
-      - 🇬🇧_GB_英国_99
-      - 🏁ZZ_142_56.41Mb
-      - 🇸🇬 SG_82
-      - n__10.51Mb
-      - n__15.21Mb
-      - 🇺🇸+US_94
-      - Relay_ | 9.65Mb_105
+      - n__19.18Mb
+      - 🇺🇸+US_113
+      - n__10.83Mb
+      - 🏁+ZZ_151
+      - 🇨🇦_CA_加拿大_74
       - n__+9.75Mb
-      - n__12.12Mb
-      - 🇬🇧_GB_英国_108
-      - n__14.28Mb
-      - 🇺🇸US_82_98.94Mb
+      - 🇨🇦CA_200_108.05Mb
+      - 🇨🇦CA_248_60.91Mb
+      - 🇨🇦_CA_加拿大_78
+      - 🏁+ZZ_140
+      - 🇨🇦_CA_加拿大_80
+      - n__17.42Mb
+      - 🏁+ZZ_130
+      - n__+9.17Mb
+      - n__21.89Mb
+      - n__26.04Mb
+      - Relay_ | 9.65Mb_86
+      - n__17.83Mb
+      - 🇳🇴NO_628_12.28Mb
+      - n__26_+8.49Mb
       - 🇨🇦CA_175_90.29Mb
-      - DE_9
-      - 🇺🇸_US_美国_113
-      - 🇫🇷+FR_41
-      - n__10.52Mb
-      - 🇨🇦CA_183_10.95Mb
       - 🇨🇦+CA_04
-      - 🇨🇦CA_165_28.24Mb
-      - 🇩🇪DE_24_33.83Mb
-      - 🏁+ZZ_138
+      - 🇺🇸+US_97
+      - 🇬🇧_GB_英国_93
+      - n__+8.28Mb
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 🇯🇵JP_560 |17.32Mb
       - ZZ_47
-      - Relay_🏁ZZ-🏁ZZ_155_ 8.35Mb
-      - n__15.35Mb
-      - Relay_🇨🇳CN-🇺🇸US_257 | 5.23Mb
-      - 🇨🇦CA_187_115.39Mb
-      - n__23.31Mb
-      - n__+8.28Mb
-      - n__11.20Mb
-      - n__+9.17Mb
-      - 🇺🇸_US_美国_11
-      - 🇺🇸_US_美国_12
-      - n__10.83Mb
-      - 🇨🇦CA_200_108.05Mb
-      - ZZ_48
-      - n__16.78Mb
-      - n__17.01Mb
-      - n__12.42Mb
-      - n__21.71Mb
-      - n__22.12Mb
-      - n__10.01Mb
-      - 🇺🇸_US_美国_22
-      - 🏁+ZZ_118
-      - n__19.18Mb
-      - n__17.38Mb
-      - n__21.89Mb
-      - n__23.52Mb
-      - FR_12
-      - 🇺🇸+US_95
-      - 🇫🇷+FR_39
-      - n__+9.07Mb
-      - n__26_+8.49Mb
-      - n__15.41Mb
-      - 🇨🇦_CA_加拿大_34
-      - n__18.23Mb
-      - n__25.78Mb
-      - n__10.36Mb
-      - 🇨🇳 CN_22
-      - n__17.83Mb
-      - n__19.91Mb
-      - CA_3
-      - n__14.75Mb
-      - 🇨🇦+CA_03
-      - 🇺🇸_US_美国_44
-      - n__+8.93Mb
-      - n__+8.09Mb
-      - n__17.42Mb
-      - 🇨🇦CA_248_60.91Mb
-      - 🇨🇦CA_156_164.19Mb
-      - 🇺🇸_US_美国_50
-      - 🇨🇦_CA_加拿大_51
-      - n__12.81Mb
-      - 🇯🇵JP_156
-      - n__26.04Mb
-      - 🇳🇴NO_628_12.28Mb
-      - 🇯🇵 JP_54
-      - 🇺🇸_US_美国_57
-      - n__13.05Mb
-      - n__14.41Mb
-      - n__11.55Mb
+      - 🇫🇷+FR_37
       - 🇫🇷+FR_35
+      - 🇨🇳 CN_22
+      - DE_9
+      - Relay_🇨🇳CN-🇺🇸US_257 | 5.23Mb
+      - n__25.78Mb
+      - 🇨🇦_CA_加拿大_8
+      - 🇺🇸 US_132
+      - 🇯🇵JP_156
+      - 🇺🇸 US_120
+      - 🇸🇬 SG_82
+      - Relay__+9.61Mb
+      - 🇩🇪DE_24_33.83Mb
+      - 🇨🇦 CA_05
+      - 🇫🇷+FR_41
+      - Relay_🇨🇦CA-🇨🇦CA_10_53.01Mb
+      - 🏁+ZZ_135
+      - n__22.12Mb
+      - 🇺🇸_US_美国_20
+      - n__11.20Mb
+      - 🇫🇷+FR_39
+      - 🇯🇵 JP_62
+      - 🇸🇬+SG_81
+      - n__15.35Mb
+      - US_46
+      - n__+8.93Mb
+      - n__22.53Mb
+      - n__11.55Mb
+      - n__21.71Mb
+      - 🇺🇸_US_美国_31
+      - n__12.12Mb
+      - n__10.52Mb
+      - FR_12
+      - n__11.22Mb
+      - n__14.28Mb
+      - n__14.75Mb
+      - n__14.41Mb
+      - n__15.41Mb
+      - n__13.05Mb
+      - US_45
+      - n__12.81Mb
+      - n__13.13Mb
+      - 🇨🇦_CA_加拿大_44
+      - 🏁+ZZ_147
+      - 🏁+ZZ_118
+      - n__13.88Mb
+      - 🇨🇦CA_156_164.19Mb
+      - 🇨🇦CA_187_115.39Mb
+      - n__17.38Mb
+      - n__23.52Mb
+      - 🇨🇦_CA_加拿大_52
+      - n__17.01Mb
       - 🇨🇦CA_222_170.79Mb
-      - n__16.27Mb
+      - 🇺🇸_US_美国_55
+      - n__19.91Mb
+      - n__15.49Mb
+      - n__16.78Mb
+      - n__10.01Mb
+      - 🇺🇸_US_美国_60
+      - 🇺🇸_US_美国_61
+      - 🇨🇦CA_212_135.06Mb
+      - n__15.21Mb
       - 🇺🇸_US_美国_64
       - 🇺🇸_US_美国_65
-      - 🏁+ZZ_135
-      - 🇬🇧_GB_英国_67
-      - 🏁+ZZ_140
+      - 🇺🇸_US_美国_66
+      - US_28
+      - 🇺🇸_US_美国_68
       - 🇨🇦_CA_加拿大_69
-      - 🏁ZZ_138_11.59Mb
-      - 🇨🇦_CA_加拿大_71
-      - n__22.53Mb
-      - Relay_🇨🇦CA-🇨🇦CA_10_53.01Mb
-      - 🇺🇸_US_美国_74
-      - 🇨🇦CA_212_135.06Mb
-      - 🇺🇸_US_美国_76
-      - 🇺🇸_US_美国_77
-      - n__13.88Mb
-      - n__13.13Mb
-      - 🇨🇦_CA_加拿大_80
-      - n__17.86Mb
-      - n__11.22Mb
-      - 🇨🇦_CA_加拿大_83
-      - 🇺🇸_US_美国_84
-      - n__15.49Mb
-      - 🇨🇦CA_177_56.09Mb
-      - 🇨🇦_CA_加拿大_87
-      - 🇨🇦 CA_10
-      - 🇨🇦_CA_加拿大_89
-      - SG_22
-      - 🇫🇷+FR_37
-      - 🇸🇬+SG_81
-      - 🇺🇸+US_97
-      - 🇫🇮FI_339_46.78Mb
-      - Relay__+9.61Mb
-      - 🇨🇦_CA_加拿大_96
-      - 🏁+ZZ_130
-      - n__+8.62Mb
-      - 🇬🇧_GB_英国_99
-      - 🏁ZZ_142_56.41Mb
-      - 🇸🇬 SG_82
-      - n__10.51Mb
-      - n__15.21Mb
-      - 🇺🇸+US_94
-      - Relay_ | 9.65Mb_105
+      - n__19.18Mb
+      - 🇺🇸+US_113
+      - n__10.83Mb
+      - 🏁+ZZ_151
+      - 🇨🇦_CA_加拿大_74
       - n__+9.75Mb
-      - n__12.12Mb
-      - 🇬🇧_GB_英国_108
-      - n__14.28Mb
-      - 🇺🇸US_82_98.94Mb
+      - 🇨🇦CA_200_108.05Mb
+      - 🇨🇦CA_248_60.91Mb
+      - 🇨🇦_CA_加拿大_78
+      - 🏁+ZZ_140
+      - 🇨🇦_CA_加拿大_80
+      - n__17.42Mb
+      - 🏁+ZZ_130
+      - n__+9.17Mb
+      - n__21.89Mb
+      - n__26.04Mb
+      - Relay_ | 9.65Mb_86
+      - n__17.83Mb
+      - 🇳🇴NO_628_12.28Mb
+      - n__26_+8.49Mb
       - 🇨🇦CA_175_90.29Mb
-      - DE_9
-      - 🇺🇸_US_美国_113
-      - 🇫🇷+FR_41
-      - n__10.52Mb
-      - 🇨🇦CA_183_10.95Mb
       - 🇨🇦+CA_04
-      - 🇨🇦CA_165_28.24Mb
-      - 🇩🇪DE_24_33.83Mb
-      - 🏁+ZZ_138
+      - 🇺🇸+US_97
+      - 🇬🇧_GB_英国_93
+      - n__+8.28Mb
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 🇯🇵JP_560 |17.32Mb
       - ZZ_47
-      - Relay_🏁ZZ-🏁ZZ_155_ 8.35Mb
-      - n__15.35Mb
-      - Relay_🇨🇳CN-🇺🇸US_257 | 5.23Mb
-      - 🇨🇦CA_187_115.39Mb
-      - n__23.31Mb
-      - n__+8.28Mb
-      - n__11.20Mb
-      - n__+9.17Mb
-      - 🇺🇸_US_美国_11
-      - 🇺🇸_US_美国_12
-      - n__10.83Mb
-      - 🇨🇦CA_200_108.05Mb
-      - ZZ_48
-      - n__16.78Mb
-      - n__17.01Mb
-      - n__12.42Mb
-      - n__21.71Mb
-      - n__22.12Mb
-      - n__10.01Mb
-      - 🇺🇸_US_美国_22
-      - 🏁+ZZ_118
-      - n__19.18Mb
-      - n__17.38Mb
-      - n__21.89Mb
-      - n__23.52Mb
-      - FR_12
-      - 🇺🇸+US_95
-      - 🇫🇷+FR_39
-      - n__+9.07Mb
-      - n__26_+8.49Mb
-      - n__15.41Mb
-      - 🇨🇦_CA_加拿大_34
-      - n__18.23Mb
-      - n__25.78Mb
-      - n__10.36Mb
-      - 🇨🇳 CN_22
-      - n__17.83Mb
-      - n__19.91Mb
-      - CA_3
-      - n__14.75Mb
-      - 🇨🇦+CA_03
-      - 🇺🇸_US_美国_44
-      - n__+8.93Mb
-      - n__+8.09Mb
-      - n__17.42Mb
-      - 🇨🇦CA_248_60.91Mb
-      - 🇨🇦CA_156_164.19Mb
-      - 🇺🇸_US_美国_50
-      - 🇨🇦_CA_加拿大_51
-      - n__12.81Mb
-      - 🇯🇵JP_156
-      - n__26.04Mb
-      - 🇳🇴NO_628_12.28Mb
-      - 🇯🇵 JP_54
-      - 🇺🇸_US_美国_57
-      - n__13.05Mb
-      - n__14.41Mb
-      - n__11.55Mb
+      - 🇫🇷+FR_37
       - 🇫🇷+FR_35
+      - 🇨🇳 CN_22
+      - DE_9
+      - Relay_🇨🇳CN-🇺🇸US_257 | 5.23Mb
+      - n__25.78Mb
+      - 🇨🇦_CA_加拿大_8
+      - 🇺🇸 US_132
+      - 🇯🇵JP_156
+      - 🇺🇸 US_120
+      - 🇸🇬 SG_82
+      - Relay__+9.61Mb
+      - 🇩🇪DE_24_33.83Mb
+      - 🇨🇦 CA_05
+      - 🇫🇷+FR_41
+      - Relay_🇨🇦CA-🇨🇦CA_10_53.01Mb
+      - 🏁+ZZ_135
+      - n__22.12Mb
+      - 🇺🇸_US_美国_20
+      - n__11.20Mb
+      - 🇫🇷+FR_39
+      - 🇯🇵 JP_62
+      - 🇸🇬+SG_81
+      - n__15.35Mb
+      - US_46
+      - n__+8.93Mb
+      - n__22.53Mb
+      - n__11.55Mb
+      - n__21.71Mb
+      - 🇺🇸_US_美国_31
+      - n__12.12Mb
+      - n__10.52Mb
+      - FR_12
+      - n__11.22Mb
+      - n__14.28Mb
+      - n__14.75Mb
+      - n__14.41Mb
+      - n__15.41Mb
+      - n__13.05Mb
+      - US_45
+      - n__12.81Mb
+      - n__13.13Mb
+      - 🇨🇦_CA_加拿大_44
+      - 🏁+ZZ_147
+      - 🏁+ZZ_118
+      - n__13.88Mb
+      - 🇨🇦CA_156_164.19Mb
+      - 🇨🇦CA_187_115.39Mb
+      - n__17.38Mb
+      - n__23.52Mb
+      - 🇨🇦_CA_加拿大_52
+      - n__17.01Mb
       - 🇨🇦CA_222_170.79Mb
-      - n__16.27Mb
+      - 🇺🇸_US_美国_55
+      - n__19.91Mb
+      - n__15.49Mb
+      - n__16.78Mb
+      - n__10.01Mb
+      - 🇺🇸_US_美国_60
+      - 🇺🇸_US_美国_61
+      - 🇨🇦CA_212_135.06Mb
+      - n__15.21Mb
       - 🇺🇸_US_美国_64
       - 🇺🇸_US_美国_65
-      - 🏁+ZZ_135
-      - 🇬🇧_GB_英国_67
-      - 🏁+ZZ_140
+      - 🇺🇸_US_美国_66
+      - US_28
+      - 🇺🇸_US_美国_68
       - 🇨🇦_CA_加拿大_69
-      - 🏁ZZ_138_11.59Mb
-      - 🇨🇦_CA_加拿大_71
-      - n__22.53Mb
-      - Relay_🇨🇦CA-🇨🇦CA_10_53.01Mb
-      - 🇺🇸_US_美国_74
-      - 🇨🇦CA_212_135.06Mb
-      - 🇺🇸_US_美国_76
-      - 🇺🇸_US_美国_77
-      - n__13.88Mb
-      - n__13.13Mb
-      - 🇨🇦_CA_加拿大_80
-      - n__17.86Mb
-      - n__11.22Mb
-      - 🇨🇦_CA_加拿大_83
-      - 🇺🇸_US_美国_84
-      - n__15.49Mb
-      - 🇨🇦CA_177_56.09Mb
-      - 🇨🇦_CA_加拿大_87
-      - 🇨🇦 CA_10
-      - 🇨🇦_CA_加拿大_89
-      - SG_22
-      - 🇫🇷+FR_37
-      - 🇸🇬+SG_81
-      - 🇺🇸+US_97
-      - 🇫🇮FI_339_46.78Mb
-      - Relay__+9.61Mb
-      - 🇨🇦_CA_加拿大_96
-      - 🏁+ZZ_130
-      - n__+8.62Mb
-      - 🇬🇧_GB_英国_99
-      - 🏁ZZ_142_56.41Mb
-      - 🇸🇬 SG_82
-      - n__10.51Mb
-      - n__15.21Mb
-      - 🇺🇸+US_94
-      - Relay_ | 9.65Mb_105
+      - n__19.18Mb
+      - 🇺🇸+US_113
+      - n__10.83Mb
+      - 🏁+ZZ_151
+      - 🇨🇦_CA_加拿大_74
       - n__+9.75Mb
-      - n__12.12Mb
-      - 🇬🇧_GB_英国_108
-      - n__14.28Mb
-      - 🇺🇸US_82_98.94Mb
+      - 🇨🇦CA_200_108.05Mb
+      - 🇨🇦CA_248_60.91Mb
+      - 🇨🇦_CA_加拿大_78
+      - 🏁+ZZ_140
+      - 🇨🇦_CA_加拿大_80
+      - n__17.42Mb
+      - 🏁+ZZ_130
+      - n__+9.17Mb
+      - n__21.89Mb
+      - n__26.04Mb
+      - Relay_ | 9.65Mb_86
+      - n__17.83Mb
+      - 🇳🇴NO_628_12.28Mb
+      - n__26_+8.49Mb
       - 🇨🇦CA_175_90.29Mb
-      - DE_9
-      - 🇺🇸_US_美国_113
-      - 🇫🇷+FR_41
-      - n__10.52Mb
-      - 🇨🇦CA_183_10.95Mb
       - 🇨🇦+CA_04
-      - 🇨🇦CA_165_28.24Mb
-      - 🇩🇪DE_24_33.83Mb
-      - 🏁+ZZ_138
+      - 🇺🇸+US_97
+      - 🇬🇧_GB_英国_93
+      - n__+8.28Mb
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇯🇵JP_560 |17.32Mb
       - ZZ_47
-      - Relay_🏁ZZ-🏁ZZ_155_ 8.35Mb
-      - n__15.35Mb
-      - Relay_🇨🇳CN-🇺🇸US_257 | 5.23Mb
-      - 🇨🇦CA_187_115.39Mb
-      - n__23.31Mb
-      - n__+8.28Mb
-      - n__11.20Mb
-      - n__+9.17Mb
-      - 🇺🇸_US_美国_11
-      - 🇺🇸_US_美国_12
-      - n__10.83Mb
-      - 🇨🇦CA_200_108.05Mb
-      - ZZ_48
-      - n__16.78Mb
-      - n__17.01Mb
-      - n__12.42Mb
-      - n__21.71Mb
-      - n__22.12Mb
-      - n__10.01Mb
-      - 🇺🇸_US_美国_22
-      - 🏁+ZZ_118
-      - n__19.18Mb
-      - n__17.38Mb
-      - n__21.89Mb
-      - n__23.52Mb
-      - FR_12
-      - 🇺🇸+US_95
-      - 🇫🇷+FR_39
-      - n__+9.07Mb
-      - n__26_+8.49Mb
-      - n__15.41Mb
-      - 🇨🇦_CA_加拿大_34
-      - n__18.23Mb
-      - n__25.78Mb
-      - n__10.36Mb
-      - 🇨🇳 CN_22
-      - n__17.83Mb
-      - n__19.91Mb
-      - CA_3
-      - n__14.75Mb
-      - 🇨🇦+CA_03
-      - 🇺🇸_US_美国_44
-      - n__+8.93Mb
-      - n__+8.09Mb
-      - n__17.42Mb
-      - 🇨🇦CA_248_60.91Mb
-      - 🇨🇦CA_156_164.19Mb
-      - 🇺🇸_US_美国_50
-      - 🇨🇦_CA_加拿大_51
-      - n__12.81Mb
-      - 🇯🇵JP_156
-      - n__26.04Mb
-      - 🇳🇴NO_628_12.28Mb
-      - 🇯🇵 JP_54
-      - 🇺🇸_US_美国_57
-      - n__13.05Mb
-      - n__14.41Mb
-      - n__11.55Mb
+      - 🇫🇷+FR_37
       - 🇫🇷+FR_35
+      - 🇨🇳 CN_22
+      - DE_9
+      - Relay_🇨🇳CN-🇺🇸US_257 | 5.23Mb
+      - n__25.78Mb
+      - 🇨🇦_CA_加拿大_8
+      - 🇺🇸 US_132
+      - 🇯🇵JP_156
+      - 🇺🇸 US_120
+      - 🇸🇬 SG_82
+      - Relay__+9.61Mb
+      - 🇩🇪DE_24_33.83Mb
+      - 🇨🇦 CA_05
+      - 🇫🇷+FR_41
+      - Relay_🇨🇦CA-🇨🇦CA_10_53.01Mb
+      - 🏁+ZZ_135
+      - n__22.12Mb
+      - 🇺🇸_US_美国_20
+      - n__11.20Mb
+      - 🇫🇷+FR_39
+      - 🇯🇵 JP_62
+      - 🇸🇬+SG_81
+      - n__15.35Mb
+      - US_46
+      - n__+8.93Mb
+      - n__22.53Mb
+      - n__11.55Mb
+      - n__21.71Mb
+      - 🇺🇸_US_美国_31
+      - n__12.12Mb
+      - n__10.52Mb
+      - FR_12
+      - n__11.22Mb
+      - n__14.28Mb
+      - n__14.75Mb
+      - n__14.41Mb
+      - n__15.41Mb
+      - n__13.05Mb
+      - US_45
+      - n__12.81Mb
+      - n__13.13Mb
+      - 🇨🇦_CA_加拿大_44
+      - 🏁+ZZ_147
+      - 🏁+ZZ_118
+      - n__13.88Mb
+      - 🇨🇦CA_156_164.19Mb
+      - 🇨🇦CA_187_115.39Mb
+      - n__17.38Mb
+      - n__23.52Mb
+      - 🇨🇦_CA_加拿大_52
+      - n__17.01Mb
       - 🇨🇦CA_222_170.79Mb
-      - n__16.27Mb
+      - 🇺🇸_US_美国_55
+      - n__19.91Mb
+      - n__15.49Mb
+      - n__16.78Mb
+      - n__10.01Mb
+      - 🇺🇸_US_美国_60
+      - 🇺🇸_US_美国_61
+      - 🇨🇦CA_212_135.06Mb
+      - n__15.21Mb
       - 🇺🇸_US_美国_64
       - 🇺🇸_US_美国_65
-      - 🏁+ZZ_135
-      - 🇬🇧_GB_英国_67
-      - 🏁+ZZ_140
+      - 🇺🇸_US_美国_66
+      - US_28
+      - 🇺🇸_US_美国_68
       - 🇨🇦_CA_加拿大_69
-      - 🏁ZZ_138_11.59Mb
-      - 🇨🇦_CA_加拿大_71
-      - n__22.53Mb
-      - Relay_🇨🇦CA-🇨🇦CA_10_53.01Mb
-      - 🇺🇸_US_美国_74
-      - 🇨🇦CA_212_135.06Mb
-      - 🇺🇸_US_美国_76
-      - 🇺🇸_US_美国_77
-      - n__13.88Mb
-      - n__13.13Mb
-      - 🇨🇦_CA_加拿大_80
-      - n__17.86Mb
-      - n__11.22Mb
-      - 🇨🇦_CA_加拿大_83
-      - 🇺🇸_US_美国_84
-      - n__15.49Mb
-      - 🇨🇦CA_177_56.09Mb
-      - 🇨🇦_CA_加拿大_87
-      - 🇨🇦 CA_10
-      - 🇨🇦_CA_加拿大_89
-      - SG_22
-      - 🇫🇷+FR_37
-      - 🇸🇬+SG_81
-      - 🇺🇸+US_97
-      - 🇫🇮FI_339_46.78Mb
-      - Relay__+9.61Mb
-      - 🇨🇦_CA_加拿大_96
-      - 🏁+ZZ_130
-      - n__+8.62Mb
-      - 🇬🇧_GB_英国_99
-      - 🏁ZZ_142_56.41Mb
-      - 🇸🇬 SG_82
-      - n__10.51Mb
-      - n__15.21Mb
-      - 🇺🇸+US_94
-      - Relay_ | 9.65Mb_105
+      - n__19.18Mb
+      - 🇺🇸+US_113
+      - n__10.83Mb
+      - 🏁+ZZ_151
+      - 🇨🇦_CA_加拿大_74
       - n__+9.75Mb
-      - n__12.12Mb
-      - 🇬🇧_GB_英国_108
-      - n__14.28Mb
-      - 🇺🇸US_82_98.94Mb
+      - 🇨🇦CA_200_108.05Mb
+      - 🇨🇦CA_248_60.91Mb
+      - 🇨🇦_CA_加拿大_78
+      - 🏁+ZZ_140
+      - 🇨🇦_CA_加拿大_80
+      - n__17.42Mb
+      - 🏁+ZZ_130
+      - n__+9.17Mb
+      - n__21.89Mb
+      - n__26.04Mb
+      - Relay_ | 9.65Mb_86
+      - n__17.83Mb
+      - 🇳🇴NO_628_12.28Mb
+      - n__26_+8.49Mb
       - 🇨🇦CA_175_90.29Mb
-      - DE_9
-      - 🇺🇸_US_美国_113
-      - 🇫🇷+FR_41
-      - n__10.52Mb
-      - 🇨🇦CA_183_10.95Mb
       - 🇨🇦+CA_04
-      - 🇨🇦CA_165_28.24Mb
-      - 🇩🇪DE_24_33.83Mb
-      - 🏁+ZZ_138
+      - 🇺🇸+US_97
+      - 🇬🇧_GB_英国_93
+      - n__+8.28Mb
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -1018,126 +810,100 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇯🇵JP_560 |17.32Mb
       - ZZ_47
-      - Relay_🏁ZZ-🏁ZZ_155_ 8.35Mb
-      - n__15.35Mb
-      - Relay_🇨🇳CN-🇺🇸US_257 | 5.23Mb
-      - 🇨🇦CA_187_115.39Mb
-      - n__23.31Mb
-      - n__+8.28Mb
-      - n__11.20Mb
-      - n__+9.17Mb
-      - 🇺🇸_US_美国_11
-      - 🇺🇸_US_美国_12
-      - n__10.83Mb
-      - 🇨🇦CA_200_108.05Mb
-      - ZZ_48
-      - n__16.78Mb
-      - n__17.01Mb
-      - n__12.42Mb
-      - n__21.71Mb
-      - n__22.12Mb
-      - n__10.01Mb
-      - 🇺🇸_US_美国_22
-      - 🏁+ZZ_118
-      - n__19.18Mb
-      - n__17.38Mb
-      - n__21.89Mb
-      - n__23.52Mb
-      - FR_12
-      - 🇺🇸+US_95
-      - 🇫🇷+FR_39
-      - n__+9.07Mb
-      - n__26_+8.49Mb
-      - n__15.41Mb
-      - 🇨🇦_CA_加拿大_34
-      - n__18.23Mb
-      - n__25.78Mb
-      - n__10.36Mb
-      - 🇨🇳 CN_22
-      - n__17.83Mb
-      - n__19.91Mb
-      - CA_3
-      - n__14.75Mb
-      - 🇨🇦+CA_03
-      - 🇺🇸_US_美国_44
-      - n__+8.93Mb
-      - n__+8.09Mb
-      - n__17.42Mb
-      - 🇨🇦CA_248_60.91Mb
-      - 🇨🇦CA_156_164.19Mb
-      - 🇺🇸_US_美国_50
-      - 🇨🇦_CA_加拿大_51
-      - n__12.81Mb
-      - 🇯🇵JP_156
-      - n__26.04Mb
-      - 🇳🇴NO_628_12.28Mb
-      - 🇯🇵 JP_54
-      - 🇺🇸_US_美国_57
-      - n__13.05Mb
-      - n__14.41Mb
-      - n__11.55Mb
+      - 🇫🇷+FR_37
       - 🇫🇷+FR_35
+      - 🇨🇳 CN_22
+      - DE_9
+      - Relay_🇨🇳CN-🇺🇸US_257 | 5.23Mb
+      - n__25.78Mb
+      - 🇨🇦_CA_加拿大_8
+      - 🇺🇸 US_132
+      - 🇯🇵JP_156
+      - 🇺🇸 US_120
+      - 🇸🇬 SG_82
+      - Relay__+9.61Mb
+      - 🇩🇪DE_24_33.83Mb
+      - 🇨🇦 CA_05
+      - 🇫🇷+FR_41
+      - Relay_🇨🇦CA-🇨🇦CA_10_53.01Mb
+      - 🏁+ZZ_135
+      - n__22.12Mb
+      - 🇺🇸_US_美国_20
+      - n__11.20Mb
+      - 🇫🇷+FR_39
+      - 🇯🇵 JP_62
+      - 🇸🇬+SG_81
+      - n__15.35Mb
+      - US_46
+      - n__+8.93Mb
+      - n__22.53Mb
+      - n__11.55Mb
+      - n__21.71Mb
+      - 🇺🇸_US_美国_31
+      - n__12.12Mb
+      - n__10.52Mb
+      - FR_12
+      - n__11.22Mb
+      - n__14.28Mb
+      - n__14.75Mb
+      - n__14.41Mb
+      - n__15.41Mb
+      - n__13.05Mb
+      - US_45
+      - n__12.81Mb
+      - n__13.13Mb
+      - 🇨🇦_CA_加拿大_44
+      - 🏁+ZZ_147
+      - 🏁+ZZ_118
+      - n__13.88Mb
+      - 🇨🇦CA_156_164.19Mb
+      - 🇨🇦CA_187_115.39Mb
+      - n__17.38Mb
+      - n__23.52Mb
+      - 🇨🇦_CA_加拿大_52
+      - n__17.01Mb
       - 🇨🇦CA_222_170.79Mb
-      - n__16.27Mb
+      - 🇺🇸_US_美国_55
+      - n__19.91Mb
+      - n__15.49Mb
+      - n__16.78Mb
+      - n__10.01Mb
+      - 🇺🇸_US_美国_60
+      - 🇺🇸_US_美国_61
+      - 🇨🇦CA_212_135.06Mb
+      - n__15.21Mb
       - 🇺🇸_US_美国_64
       - 🇺🇸_US_美国_65
-      - 🏁+ZZ_135
-      - 🇬🇧_GB_英国_67
-      - 🏁+ZZ_140
+      - 🇺🇸_US_美国_66
+      - US_28
+      - 🇺🇸_US_美国_68
       - 🇨🇦_CA_加拿大_69
-      - 🏁ZZ_138_11.59Mb
-      - 🇨🇦_CA_加拿大_71
-      - n__22.53Mb
-      - Relay_🇨🇦CA-🇨🇦CA_10_53.01Mb
-      - 🇺🇸_US_美国_74
-      - 🇨🇦CA_212_135.06Mb
-      - 🇺🇸_US_美国_76
-      - 🇺🇸_US_美国_77
-      - n__13.88Mb
-      - n__13.13Mb
-      - 🇨🇦_CA_加拿大_80
-      - n__17.86Mb
-      - n__11.22Mb
-      - 🇨🇦_CA_加拿大_83
-      - 🇺🇸_US_美国_84
-      - n__15.49Mb
-      - 🇨🇦CA_177_56.09Mb
-      - 🇨🇦_CA_加拿大_87
-      - 🇨🇦 CA_10
-      - 🇨🇦_CA_加拿大_89
-      - SG_22
-      - 🇫🇷+FR_37
-      - 🇸🇬+SG_81
-      - 🇺🇸+US_97
-      - 🇫🇮FI_339_46.78Mb
-      - Relay__+9.61Mb
-      - 🇨🇦_CA_加拿大_96
-      - 🏁+ZZ_130
-      - n__+8.62Mb
-      - 🇬🇧_GB_英国_99
-      - 🏁ZZ_142_56.41Mb
-      - 🇸🇬 SG_82
-      - n__10.51Mb
-      - n__15.21Mb
-      - 🇺🇸+US_94
-      - Relay_ | 9.65Mb_105
+      - n__19.18Mb
+      - 🇺🇸+US_113
+      - n__10.83Mb
+      - 🏁+ZZ_151
+      - 🇨🇦_CA_加拿大_74
       - n__+9.75Mb
-      - n__12.12Mb
-      - 🇬🇧_GB_英国_108
-      - n__14.28Mb
-      - 🇺🇸US_82_98.94Mb
+      - 🇨🇦CA_200_108.05Mb
+      - 🇨🇦CA_248_60.91Mb
+      - 🇨🇦_CA_加拿大_78
+      - 🏁+ZZ_140
+      - 🇨🇦_CA_加拿大_80
+      - n__17.42Mb
+      - 🏁+ZZ_130
+      - n__+9.17Mb
+      - n__21.89Mb
+      - n__26.04Mb
+      - Relay_ | 9.65Mb_86
+      - n__17.83Mb
+      - 🇳🇴NO_628_12.28Mb
+      - n__26_+8.49Mb
       - 🇨🇦CA_175_90.29Mb
-      - DE_9
-      - 🇺🇸_US_美国_113
-      - 🇫🇷+FR_41
-      - n__10.52Mb
-      - 🇨🇦CA_183_10.95Mb
       - 🇨🇦+CA_04
-      - 🇨🇦CA_165_28.24Mb
-      - 🇩🇪DE_24_33.83Mb
-      - 🏁+ZZ_138
+      - 🇺🇸+US_97
+      - 🇬🇧_GB_英国_93
+      - n__+8.28Mb
 rules:
   - DOMAIN-SUFFIX,local,🎯 全球直连
   - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
