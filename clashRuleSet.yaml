@@ -3,337 +3,825 @@ socks-port: 7891
 allow-lan: true
 mode: Rule
 log-level: info
-external-controller: 0.0.0.0:9090
+external-controller: :9090
 proxies:
-  - {name: CA_10, server: 198.57.27.218, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
-  - {name: CA_09, server: 198.57.27.218, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
-  - {name: DE_7, server: 146.0.36.23, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
-  - {name: 🇭🇰 HK_62, server: 118.107.244.110, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
-  - {name: CA_06, server: 198.57.27.218, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
-  - {name: FR_48, server: 145.239.1.137, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
-  - {name: DE_8, server: 146.0.36.23, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
-  - {name: NO_94, server: 46.29.218.6, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
-  - {name: DE_40, server: 93.186.201.124, port: 812, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
-  - {name: AU_02, server: 43.155.75.170, port: 80, type: vmess, uuid: 76329684-c5d2-4cf7-fcf5-06ad79a6aab3, alterId: 0, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: 43.155.75.170}}
-  - {name: ZZ_188, server: 134.195.198.252, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
-  - {name: 🇸🇬 SG_119, server: 81.90.189.18, port: 801, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
-  - {name: ZZ_56, server: 134.195.196.3, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
-  - {name: ZZ_186, server: 134.195.196.3, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
-  - {name: 🇸🇬 SG_21, server: 217.197.161.244, port: 800, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
-  - {name: 🇸🇬 SG_115, server: 81.90.189.18, port: 809, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
-  - {name: NO_91, server: 46.29.218.6, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
-  - {name: 🇸🇬 SG_114, server: 81.90.189.18, port: 806, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
-  - {name: 🇸🇬 SG_118, server: 81.90.189.18, port: 810, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
-  - {name: NO_92, server: 46.29.218.6, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
-  - {name: 🇸🇬 SG_22, server: 139.162.51.223, port: 51939, type: vmess, uuid: 4db2a027-17fb-4d27-b8ca-93b548e487a2, alterId: 0, cipher: auto, tls: false}
-  - {name: FR_52, server: 145.239.1.137, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
-  - {name: 🇭🇰 HK_64, server: 118.107.244.110, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
-  - {name: NO_15, server: 46.29.218.6, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
-  - {name: CA_11, server: 198.57.27.218, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
-  - {name: 🇭🇰 HK_63, server: 118.107.244.110, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
-  - {name: 🇭🇰 HK_61, server: 118.107.244.110, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
-  - {name: 🇯🇵 JP_77, server: 172.105.251.193, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
-  - {name: FR_51, server: 145.239.1.137, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
-  - {name: FR_47, server: 145.239.1.137, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
-  - {name: FR_50, server: 145.239.1.137, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
-  - {name: FR_55, server: 145.239.1.137, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
-  - {name: 🇺🇸 US_156, server: 107.148.200.229, port: 10022, type: vmess, uuid: 6e6ce89a-42d5-11ec-ac9d-00163c0ad178, alterId: 0, cipher: auto, tls: false}
-  - {name: CA_2, server: 198.57.27.218, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
-  - {name: 🇺🇸 US_157, server: 107.148.200.123, port: 30033, type: vmess, uuid: e85a81e0-12a0-11ec-bc90-00163c1b189e, alterId: 0, cipher: auto, tls: false}
-  - {name: RO_97, server: 45.83.91.66, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: fAmKHf3Dft78ZyzL9kYF}
+- name: AU_14
+  server: 43.155.75.170
+  port: 80
+  type: vmess
+  uuid: 76329684-c5d2-4cf7-fcf5-06ad79a6aab3
+  alterId: 64
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-path: /
+  ws-headers:
+    Host: 43.155.75.170
+  udp: true
+- name: Relay_🇫🇷FR-🇫🇷FR_313
+  server: 145.239.1.137
+  port: 7307
+  type: ss
+  cipher: aes-256-gcm
+  password: FoOiGlkAA9yPEGP
+  udp: true
+- name: Relay_🇫🇷FR-🇫🇷FR_296
+  server: 145.239.1.137
+  port: 3306
+  type: ss
+  cipher: aes-256-gcm
+  password: Y6R9pAtvxxzmGC
+  udp: true
+- name: Relay_🇫🇷FR-🇫🇷FR_297
+  server: 145.239.1.137
+  port: 7306
+  type: ss
+  cipher: aes-256-gcm
+  password: FoOiGlkAA9yPEGP
+  udp: true
+- name: HK_407
+  server: www.zx07.top
+  port: 443
+  type: trojan
+  password: L1qNeGrY58ApwrRA
+  skip-cert-verify: true
+  udp: true
+- name: JP_515
+  server: a83679f.hf.gladns.com
+  port: 3306
+  type: vmess
+  uuid: 57e0cb4d-eae5-48ec-8091-149dc2b309e0
+  alterId: 32
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-path: /t
+  ws-headers:
+    Host: a83679f.hf.gladns.com
+  udp: true
+- name: JP_497
+  server: 172.105.251.193
+  port: 2376
+  type: ss
+  cipher: aes-256-gcm
+  password: faBAoD54k87UJG7
+  udp: true
+- name: JP_465
+  server: 172.105.251.193
+  port: 5003
+  type: ss
+  cipher: aes-256-gcm
+  password: g5MeD6Ft3CWlJId
+  udp: true
+- name: JP_468
+  server: 172.105.251.193
+  port: 5004
+  type: ss
+  cipher: aes-256-gcm
+  password: g5MeD6Ft3CWlJId
+  udp: true
+- name: JP_494
+  server: 172.105.244.165
+  port: 2375
+  type: ss
+  cipher: aes-256-gcm
+  password: faBAoD54k87UJG7
+  udp: true
+- name: JP_496
+  server: 172.105.244.165
+  port: 7307
+  type: ss
+  cipher: aes-256-gcm
+  password: FoOiGlkAA9yPEGP
+  udp: true
+- name: JP_463
+  server: 172.105.244.165
+  port: 5003
+  type: ss
+  cipher: aes-256-gcm
+  password: g5MeD6Ft3CWlJId
+  udp: true
+- name: JP_471
+  server: 172.105.244.165
+  port: 3389
+  type: ss
+  cipher: aes-256-gcm
+  password: Y6R9pAtvxxzmGC
+  udp: true
+- name: NO_567
+  server: 46.29.218.170
+  port: 8119
+  type: ss
+  cipher: aes-256-gcm
+  password: cdBIDV42DCwnfIN
+  udp: true
+- name: NO_562
+  server: 46.29.219.246
+  port: 7307
+  type: ss
+  cipher: aes-256-gcm
+  password: FoOiGlkAA9yPEGP
+  udp: true
+- name: SG_681
+  server: 172.104.168.83
+  port: 443
+  type: ss
+  cipher: aes-256-gcm
+  password: pKEW8JPByTVTLtM
+  udp: true
+- name: Pool_🇹🇼TW_811
+  server: 59.125.11.158
+  port: 8158
+  type: ssr
+  cipher: rc4-md5
+  password: passinfo123
+  protocol: origin
+  obfs: plain
+  protocol-param: ''
+  obfs-param: ''
+  udp: true
+- name: SG_755
+  server: 172.104.168.83
+  port: 2375
+  type: ss
+  cipher: aes-256-gcm
+  password: faBAoD54k87UJG7
+  udp: true
+- name: SG_758
+  server: 172.104.168.83
+  port: 3306
+  type: ss
+  cipher: aes-256-gcm
+  password: Y6R9pAtvxxzmGC
+  udp: true
+- name: SG_788
+  server: 172.104.168.83
+  port: 8090
+  type: ss
+  cipher: aes-256-gcm
+  password: PCnnH6SQSnfoS27
+  udp: true
+- name: SG_767
+  server: 172.104.168.83
+  port: 3389
+  type: ss
+  cipher: aes-256-gcm
+  password: Y6R9pAtvxxzmGC
+  udp: true
+- name: SG_799
+  server: 8.214.46.152
+  port: 50885
+  type: vmess
+  uuid: d064d11b-477c-4c5d-a2d8-9fd599ef8e79
+  alterId: 1
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-path: /
+  ws-headers:
+    Host: 8.214.46.152
+  udp: true
+- name: Relay_🇺🇦UA-🇺🇦UA_817
+  server: 37.19.218.197
+  port: 8388
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: Mx6DztQqZb7j34FdWjER
+  udp: true
+- name: SG_786
+  server: 172.104.168.83
+  port: 8080
+  type: ss
+  cipher: aes-256-gcm
+  password: KixLvKzwjekG00rm
+  udp: true
+- name: SG_801
+  server: 172.105.113.182
+  port: 59633
+  type: vmess
+  uuid: f0dad28b-c9d3-44e7-9447-6a99fe35abb6
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  udp: true
+- name: US_982
+  server: 38.68.135.93
+  port: 7306
+  type: ss
+  cipher: aes-256-gcm
+  password: FoOiGlkAA9yPEGP
+  udp: true
+- name: US_1015
+  server: 38.114.114.69
+  port: 8091
+  type: ss
+  cipher: aes-256-gcm
+  password: PCnnH6SQSnfoS27
+  udp: true
+- name: US_987
+  server: 38.68.135.93
+  port: 8080
+  type: ss
+  cipher: aes-256-gcm
+  password: KixLvKzwjekG00rm
+  udp: true
+- name: US_1008
+  server: 167.88.63.89
+  port: 8080
+  type: ss
+  cipher: aes-256-gcm
+  password: KixLvKzwjekG00rm
+  udp: true
+- name: US_1020
+  server: 167.88.63.89
+  port: 2375
+  type: ss
+  cipher: aes-256-gcm
+  password: faBAoD54k87UJG7
+  udp: true
+- name: US_1131
+  server: 38.114.114.69
+  port: 7307
+  type: ss
+  cipher: aes-256-gcm
+  password: FoOiGlkAA9yPEGP
+  udp: true
+- name: US_1057
+  server: 38.68.135.93
+  port: 3389
+  type: ss
+  cipher: aes-256-gcm
+  password: Y6R9pAtvxxzmGC
+  udp: true
+- name: US_1075
+  server: 142.202.48.17
+  port: 3306
+  type: ss
+  cipher: aes-256-gcm
+  password: Y6R9pAtvxxzmGC
+  udp: true
+- name: US_1179
+  server: 167.88.63.89
+  port: 7306
+  type: ss
+  cipher: aes-256-gcm
+  password: FoOiGlkAA9yPEGP
+  udp: true
+- name: US_1338
+  server: 167.88.63.89
+  port: 8091
+  type: ss
+  cipher: aes-256-gcm
+  password: PCnnH6SQSnfoS27
+  udp: true
+- name: US_1348
+  server: 38.75.136.102
+  port: 5003
+  type: ss
+  cipher: aes-256-gcm
+  password: g5MeD6Ft3CWlJId
+  udp: true
+- name: US_1640
+  server: 38.114.114.69
+  port: 3306
+  type: ss
+  cipher: aes-256-gcm
+  password: Y6R9pAtvxxzmGC
+  udp: true
+- name: US_1606
+  server: 38.68.135.93
+  port: 443
+  type: ss
+  cipher: aes-256-gcm
+  password: pKEW8JPByTVTLtM
+  udp: true
+- name: US_1617
+  server: 167.88.63.89
+  port: 443
+  type: ss
+  cipher: aes-256-gcm
+  password: pKEW8JPByTVTLtM
+  udp: true
+- name: US_1593
+  server: 38.75.136.102
+  port: 443
+  type: ss
+  cipher: aes-256-gcm
+  password: pKEW8JPByTVTLtM
+  udp: true
+- name: Relay_🇺🇸US-🇺🇸US_1676
+  server: c23s801.jamjams.net
+  port: 61173
+  type: vmess
+  uuid: 9d1043a6-e87e-4bb7-8858-c1185e9c0c3b
+  alterId: 8
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  udp: true
+- name: US_1699
+  server: 192.74.254.167
+  port: 500
+  type: vmess
+  uuid: 764e808a-115e-11ec-a88f-00163c9f4934
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  udp: true
+- name: IN_482 | 2.87Mb
+  server: 169.38.107.52
+  port: 8388
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: 7D4GYNDaFy4eebe47tvF
+  udp: true
+- name: US_1722 |60.03Mb
+  server: 23.83.227.114
+  port: 61173
+  type: vmess
+  uuid: 9d1043a6-e87e-4bb7-8858-c1185e9c0c3b
+  alterId: 8
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  udp: true
+- name: US_1705 |12.20Mb
+  server: 107.148.200.123
+  port: 30033
+  type: vmess
+  uuid: e85a81e0-12a0-11ec-bc90-00163c1b189e
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  udp: true
+- name: RU_661 |11.47Mb
+  server: 194.87.70.151
+  port: 41709
+  type: vmess
+  uuid: afb1e44e-588e-11ec-8c53-4aee85755798
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  udp: true
+- name: NO_602 | 7.32Mb
+  server: 46.29.218.170
+  port: 8118
+  type: ss
+  cipher: aes-256-gcm
+  password: cdBIDV42DCwnfIN
+  udp: true
+- name: Relay_ | 2.18Mb
+  server: p5.22332e.com
+  port: 8333
+  type: ssr
+  cipher: rc4-md5
+  password: passfw2xs4e!
+  protocol: origin
+  obfs: plain
+  protocol-param: t.me/SSRSUB
+  obfs-param: ''
+  udp: true
+- name: Relay_ | 3.47Mb
+  server: ssr3.ssrsub.com
+  port: 8333
+  type: ssr
+  cipher: rc4-md5
+  password: passfw2xs4e!
+  protocol: origin
+  obfs: plain
+  protocol-param: t.me/SSRSUB
+  obfs-param: ''
+  udp: true
+- name: CN_66
+  server: 101.132.192.212
+  port: 30003
+  type: ss
+  cipher: aes-128-gcm
+  password: desperadoj.com_free_proxy_d39m
+  udp: true
+- name: HK_308
+  server: 84.17.37.55
+  port: 8389
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: tjwRqQvteAjt3xFmbZTA
+  udp: true
+- name: CN_68
+  server: 117.28.243.169
+  port: 8333
+  type: ss
+  cipher: rc4-md5
+  password: passfw2xs4e!
+  udp: true
+- name: CN_64
+  server: ssr4.ssrsub.com
+  port: 8333
+  type: ssr
+  cipher: rc4-md5
+  password: passfw2xs4e!
+  protocol: origin
+  obfs: plain
+  protocol-param: ''
+  obfs-param: ''
+  udp: true
+- name: CN_67
+  server: music.desperadoj.com
+  port: 30003
+  type: ss
+  cipher: aes-128-gcm
+  password: desperadoj.com_free_proxy_d39m
+  udp: true
+- name: _168 | 4.55Mb
+  server: 46.29.219.246
+  port: 2376
+  type: ss
+  cipher: aes-256-gcm
+  password: faBAoD54k87UJG7
+  udp: true
+- name: _170 | 3.75Mb
+  server: 46.29.219.246
+  port: 8090
+  type: ss
+  cipher: aes-256-gcm
+  password: PCnnH6SQSnfoS27
+  udp: true
+- name: Relay_🇯🇵JP-🇵🇰PK_866 |19.60Mb
+  server: 84.17.34.8
+  port: 8389
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: FuynHKjkzhBnmcLpaLKm
+  udp: true
 proxy-groups:
-  - name: 🚀 节点选择
-    type: select
-    proxies:
-      - ♻️ 自动选择
-      - 🔯 故障转移
-      - DIRECT
-      - CA_10
-      - CA_09
-      - DE_7
-      - 🇭🇰 HK_62
-      - CA_06
-      - FR_48
-      - DE_8
-      - NO_94
-      - DE_40
-      - AU_02
-      - ZZ_188
-      - 🇸🇬 SG_119
-      - ZZ_56
-      - ZZ_186
-      - 🇸🇬 SG_21
-      - 🇸🇬 SG_115
-      - NO_91
-      - 🇸🇬 SG_114
-      - 🇸🇬 SG_118
-      - NO_92
-      - 🇸🇬 SG_22
-      - FR_52
-      - 🇭🇰 HK_64
-      - NO_15
-      - CA_11
-      - 🇭🇰 HK_63
-      - 🇭🇰 HK_61
-      - 🇯🇵 JP_77
-      - FR_51
-      - FR_47
-      - FR_50
-      - FR_55
-      - 🇺🇸 US_156
-      - CA_2
-      - 🇺🇸 US_157
-      - RO_97
-  - name: ♻️ 自动选择
-    type: url-test
-    url: http://www.gstatic.com/generate_204
-    interval: 300
-    tolerance: 50
-    proxies:
-      - CA_10
-      - CA_09
-      - DE_7
-      - 🇭🇰 HK_62
-      - CA_06
-      - FR_48
-      - DE_8
-      - NO_94
-      - DE_40
-      - AU_02
-      - ZZ_188
-      - 🇸🇬 SG_119
-      - ZZ_56
-      - ZZ_186
-      - 🇸🇬 SG_21
-      - 🇸🇬 SG_115
-      - NO_91
-      - 🇸🇬 SG_114
-      - 🇸🇬 SG_118
-      - NO_92
-      - 🇸🇬 SG_22
-      - FR_52
-      - 🇭🇰 HK_64
-      - NO_15
-      - CA_11
-      - 🇭🇰 HK_63
-      - 🇭🇰 HK_61
-      - 🇯🇵 JP_77
-      - FR_51
-      - FR_47
-      - FR_50
-      - FR_55
-      - 🇺🇸 US_156
-      - CA_2
-      - 🇺🇸 US_157
-      - RO_97
-  - name: 🔯 故障转移
-    type: fallback
-    url: http://www.gstatic.com/generate_204
-    interval: 180
-    proxies:
-      - CA_10
-      - CA_09
-      - DE_7
-      - 🇭🇰 HK_62
-      - CA_06
-      - FR_48
-      - DE_8
-      - NO_94
-      - DE_40
-      - AU_02
-      - ZZ_188
-      - 🇸🇬 SG_119
-      - ZZ_56
-      - ZZ_186
-      - 🇸🇬 SG_21
-      - 🇸🇬 SG_115
-      - NO_91
-      - 🇸🇬 SG_114
-      - 🇸🇬 SG_118
-      - NO_92
-      - 🇸🇬 SG_22
-      - FR_52
-      - 🇭🇰 HK_64
-      - NO_15
-      - CA_11
-      - 🇭🇰 HK_63
-      - 🇭🇰 HK_61
-      - 🇯🇵 JP_77
-      - FR_51
-      - FR_47
-      - FR_50
-      - FR_55
-      - 🇺🇸 US_156
-      - CA_2
-      - 🇺🇸 US_157
-      - RO_97
-  - name: 🎯 全球直连
-    type: select
-    proxies:
-      - DIRECT
-      - 🚀 节点选择
-      - ♻️ 自动选择
-  - name: 🛑 全球拦截
-    type: select
-    proxies:
-      - REJECT
-      - DIRECT
-  - name: 🐟 漏网之鱼
-    type: select
-    proxies:
-      - 🚀 节点选择
-      - 🎯 全球直连
-      - ♻️ 自动选择
-      - 🔯 故障转移
-      - CA_10
-      - CA_09
-      - DE_7
-      - 🇭🇰 HK_62
-      - CA_06
-      - FR_48
-      - DE_8
-      - NO_94
-      - DE_40
-      - AU_02
-      - ZZ_188
-      - 🇸🇬 SG_119
-      - ZZ_56
-      - ZZ_186
-      - 🇸🇬 SG_21
-      - 🇸🇬 SG_115
-      - NO_91
-      - 🇸🇬 SG_114
-      - 🇸🇬 SG_118
-      - NO_92
-      - 🇸🇬 SG_22
-      - FR_52
-      - 🇭🇰 HK_64
-      - NO_15
-      - CA_11
-      - 🇭🇰 HK_63
-      - 🇭🇰 HK_61
-      - 🇯🇵 JP_77
-      - FR_51
-      - FR_47
-      - FR_50
-      - FR_55
-      - 🇺🇸 US_156
-      - CA_2
-      - 🇺🇸 US_157
-      - RO_97
+- name: 🚀 节点选择
+  type: select
+  proxies:
+  - ♻️ 自动选择
+  - 🔯 故障转移
+  - DIRECT
+  - AU_14
+  - Relay_🇫🇷FR-🇫🇷FR_313
+  - Relay_🇫🇷FR-🇫🇷FR_296
+  - Relay_🇫🇷FR-🇫🇷FR_297
+  - HK_407
+  - JP_515
+  - JP_497
+  - JP_465
+  - JP_468
+  - JP_494
+  - JP_496
+  - JP_463
+  - JP_471
+  - NO_567
+  - NO_562
+  - SG_681
+  - Pool_🇹🇼TW_811
+  - SG_755
+  - SG_758
+  - SG_788
+  - SG_767
+  - SG_799
+  - Relay_🇺🇦UA-🇺🇦UA_817
+  - SG_786
+  - SG_801
+  - US_982
+  - US_1015
+  - US_987
+  - US_1008
+  - US_1020
+  - US_1131
+  - US_1057
+  - US_1075
+  - US_1179
+  - US_1338
+  - US_1348
+  - US_1640
+  - US_1606
+  - US_1617
+  - US_1593
+  - Relay_🇺🇸US-🇺🇸US_1676
+  - US_1699
+  - IN_482 | 2.87Mb
+  - US_1722 |60.03Mb
+  - US_1705 |12.20Mb
+  - RU_661 |11.47Mb
+  - NO_602 | 7.32Mb
+  - Relay_ | 2.18Mb
+  - Relay_ | 3.47Mb
+  - CN_66
+  - HK_308
+  - CN_68
+  - CN_64
+  - CN_67
+  - _168 | 4.55Mb
+  - _170 | 3.75Mb
+  - Relay_🇯🇵JP-🇵🇰PK_866 |19.60Mb
+- name: ♻️ 自动选择
+  type: url-test
+  url: http://www.gstatic.com/generate_204
+  interval: 300
+  tolerance: 50
+  proxies:
+  - AU_14
+  - Relay_🇫🇷FR-🇫🇷FR_313
+  - Relay_🇫🇷FR-🇫🇷FR_296
+  - Relay_🇫🇷FR-🇫🇷FR_297
+  - HK_407
+  - JP_515
+  - JP_497
+  - JP_465
+  - JP_468
+  - JP_494
+  - JP_496
+  - JP_463
+  - JP_471
+  - NO_567
+  - NO_562
+  - SG_681
+  - Pool_🇹🇼TW_811
+  - SG_755
+  - SG_758
+  - SG_788
+  - SG_767
+  - SG_799
+  - Relay_🇺🇦UA-🇺🇦UA_817
+  - SG_786
+  - SG_801
+  - US_982
+  - US_1015
+  - US_987
+  - US_1008
+  - US_1020
+  - US_1131
+  - US_1057
+  - US_1075
+  - US_1179
+  - US_1338
+  - US_1348
+  - US_1640
+  - US_1606
+  - US_1617
+  - US_1593
+  - Relay_🇺🇸US-🇺🇸US_1676
+  - US_1699
+  - IN_482 | 2.87Mb
+  - US_1722 |60.03Mb
+  - US_1705 |12.20Mb
+  - RU_661 |11.47Mb
+  - NO_602 | 7.32Mb
+  - Relay_ | 2.18Mb
+  - Relay_ | 3.47Mb
+  - CN_66
+  - HK_308
+  - CN_68
+  - CN_64
+  - CN_67
+  - _168 | 4.55Mb
+  - _170 | 3.75Mb
+  - Relay_🇯🇵JP-🇵🇰PK_866 |19.60Mb
+- name: 🔯 故障转移
+  type: fallback
+  url: http://www.gstatic.com/generate_204
+  interval: 180
+  proxies:
+  - AU_14
+  - Relay_🇫🇷FR-🇫🇷FR_313
+  - Relay_🇫🇷FR-🇫🇷FR_296
+  - Relay_🇫🇷FR-🇫🇷FR_297
+  - HK_407
+  - JP_515
+  - JP_497
+  - JP_465
+  - JP_468
+  - JP_494
+  - JP_496
+  - JP_463
+  - JP_471
+  - NO_567
+  - NO_562
+  - SG_681
+  - Pool_🇹🇼TW_811
+  - SG_755
+  - SG_758
+  - SG_788
+  - SG_767
+  - SG_799
+  - Relay_🇺🇦UA-🇺🇦UA_817
+  - SG_786
+  - SG_801
+  - US_982
+  - US_1015
+  - US_987
+  - US_1008
+  - US_1020
+  - US_1131
+  - US_1057
+  - US_1075
+  - US_1179
+  - US_1338
+  - US_1348
+  - US_1640
+  - US_1606
+  - US_1617
+  - US_1593
+  - Relay_🇺🇸US-🇺🇸US_1676
+  - US_1699
+  - IN_482 | 2.87Mb
+  - US_1722 |60.03Mb
+  - US_1705 |12.20Mb
+  - RU_661 |11.47Mb
+  - NO_602 | 7.32Mb
+  - Relay_ | 2.18Mb
+  - Relay_ | 3.47Mb
+  - CN_66
+  - HK_308
+  - CN_68
+  - CN_64
+  - CN_67
+  - _168 | 4.55Mb
+  - _170 | 3.75Mb
+  - Relay_🇯🇵JP-🇵🇰PK_866 |19.60Mb
+- name: 🎯 全球直连
+  type: select
+  proxies:
+  - DIRECT
+  - 🚀 节点选择
+  - ♻️ 自动选择
+- name: 🛑 全球拦截
+  type: select
+  proxies:
+  - REJECT
+  - DIRECT
+- name: 🐟 漏网之鱼
+  type: select
+  proxies:
+  - 🚀 节点选择
+  - 🎯 全球直连
+  - ♻️ 自动选择
+  - 🔯 故障转移
+  - AU_14
+  - Relay_🇫🇷FR-🇫🇷FR_313
+  - Relay_🇫🇷FR-🇫🇷FR_296
+  - Relay_🇫🇷FR-🇫🇷FR_297
+  - HK_407
+  - JP_515
+  - JP_497
+  - JP_465
+  - JP_468
+  - JP_494
+  - JP_496
+  - JP_463
+  - JP_471
+  - NO_567
+  - NO_562
+  - SG_681
+  - Pool_🇹🇼TW_811
+  - SG_755
+  - SG_758
+  - SG_788
+  - SG_767
+  - SG_799
+  - Relay_🇺🇦UA-🇺🇦UA_817
+  - SG_786
+  - SG_801
+  - US_982
+  - US_1015
+  - US_987
+  - US_1008
+  - US_1020
+  - US_1131
+  - US_1057
+  - US_1075
+  - US_1179
+  - US_1338
+  - US_1348
+  - US_1640
+  - US_1606
+  - US_1617
+  - US_1593
+  - Relay_🇺🇸US-🇺🇸US_1676
+  - US_1699
+  - IN_482 | 2.87Mb
+  - US_1722 |60.03Mb
+  - US_1705 |12.20Mb
+  - RU_661 |11.47Mb
+  - NO_602 | 7.32Mb
+  - Relay_ | 2.18Mb
+  - Relay_ | 3.47Mb
+  - CN_66
+  - HK_308
+  - CN_68
+  - CN_64
+  - CN_67
+  - _168 | 4.55Mb
+  - _170 | 3.75Mb
+  - Relay_🇯🇵JP-🇵🇰PK_866 |19.60Mb
+rules:
+- RULE-SET,applications,DIRECT
+- DOMAIN,clash.razord.top,DIRECT
+- DOMAIN,yacd.haishan.me,DIRECT
+- RULE-SET,private,DIRECT
+- RULE-SET,reject,REJECT
+- RULE-SET,icloud,DIRECT
+- RULE-SET,apple,DIRECT
+- RULE-SET,google,DIRECT
+- RULE-SET,proxy,🚀 节点选择
+- RULE-SET,direct,DIRECT
+- RULE-SET,lancidr,DIRECT
+- RULE-SET,cncidr,DIRECT
+- RULE-SET,telegramcidr,🚀 节点选择
+- GEOIP,,DIRECT
+- GEOIP,CN,DIRECT
+- MATCH,🚀 节点选择
 rule-providers:
   reject:
     type: http
     behavior: domain
-    url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/reject.txt"
+    url: https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/reject.txt
     path: ./ruleset/reject.yaml
     interval: 86400
-
   icloud:
     type: http
     behavior: domain
-    url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/icloud.txt"
+    url: https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/icloud.txt
     path: ./ruleset/icloud.yaml
     interval: 86400
-
   apple:
     type: http
     behavior: domain
-    url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/apple.txt"
+    url: https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/apple.txt
     path: ./ruleset/apple.yaml
     interval: 86400
-
   google:
     type: http
     behavior: domain
-    url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/google.txt"
+    url: https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/google.txt
     path: ./ruleset/google.yaml
     interval: 86400
-
   proxy:
     type: http
     behavior: domain
-    url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/proxy.txt"
+    url: https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/proxy.txt
     path: ./ruleset/proxy.yaml
     interval: 86400
-
   direct:
     type: http
     behavior: domain
-    url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/direct.txt"
+    url: https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/direct.txt
     path: ./ruleset/direct.yaml
     interval: 86400
-
   private:
     type: http
     behavior: domain
-    url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/private.txt"
+    url: https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/private.txt
     path: ./ruleset/private.yaml
     interval: 86400
-
   gfw:
     type: http
     behavior: domain
-    url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/gfw.txt"
+    url: https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/gfw.txt
     path: ./ruleset/gfw.yaml
     interval: 86400
-
   greatfire:
     type: http
     behavior: domain
-    url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/greatfire.txt"
+    url: https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/greatfire.txt
     path: ./ruleset/greatfire.yaml
     interval: 86400
-
   tld-not-cn:
     type: http
     behavior: domain
-    url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/tld-not-cn.txt"
+    url: https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/tld-not-cn.txt
     path: ./ruleset/tld-not-cn.yaml
     interval: 86400
-
   telegramcidr:
     type: http
     behavior: ipcidr
-    url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/telegramcidr.txt"
+    url: https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/telegramcidr.txt
     path: ./ruleset/telegramcidr.yaml
     interval: 86400
-
   cncidr:
     type: http
     behavior: ipcidr
-    url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/cncidr.txt"
+    url: https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/cncidr.txt
     path: ./ruleset/cncidr.yaml
     interval: 86400
-
   lancidr:
     type: http
     behavior: ipcidr
-    url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/lancidr.txt"
+    url: https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/lancidr.txt
     path: ./ruleset/lancidr.yaml
     interval: 86400
-
   applications:
     type: http
     behavior: classical
-    url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/applications.txt"
+    url: https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/applications.txt
     path: ./ruleset/applications.yaml
     interval: 86400
-rules:
-  - RULE-SET,applications,DIRECT
-  - DOMAIN,clash.razord.top,DIRECT
-  - DOMAIN,yacd.haishan.me,DIRECT
-  - RULE-SET,private,DIRECT
-  - RULE-SET,reject,REJECT
-  - RULE-SET,icloud,DIRECT
-  - RULE-SET,apple,DIRECT
-  - RULE-SET,google,DIRECT
-  - RULE-SET,proxy,🚀 节点选择
-  - RULE-SET,direct,DIRECT
-  - RULE-SET,lancidr,DIRECT
-  - RULE-SET,cncidr,DIRECT
-  - RULE-SET,telegramcidr,🚀 节点选择
-  - GEOIP,,DIRECT
-  - GEOIP,CN,DIRECT
-  - MATCH,🚀 节点选择
-  
