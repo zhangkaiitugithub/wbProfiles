@@ -5,74 +5,49 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-- name: CN_10
-  server: jmcm.rokishi.cyou
-  port: 10050
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: d360a89a-3618-4573-91c9-3c3d7cd5df68
-  udp: true
-- name: CN_16
-  server: jmcm.rokishi.cyou
-  port: 10015
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: d360a89a-3618-4573-91c9-3c3d7cd5df68
-  udp: true
-- name: CN_31
-  server: jmcm.rokishi.cyou
-  port: 10052
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: d360a89a-3618-4573-91c9-3c3d7cd5df68
-  udp: true
-- name: CN_7
-  server: gzcm.rokishi.cyou
-  port: 20001
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: d360a89a-3618-4573-91c9-3c3d7cd5df68
-  udp: true
-- name: JP_623 |30.43Mb
+- name: JP_日本_01
   server: 172.104.82.126
   port: 443
   type: ss
   cipher: aes-256-gcm
   password: pKEW8JPByTVTLtM
   udp: true
-- name: CN_20
-  server: gzcm.rokishi.cyou
-  port: 20013
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: d360a89a-3618-4573-91c9-3c3d7cd5df68
+- name: CN_中国_01
+  server: 112.33.32.136
+  port: 10003
+  type: vmess
+  uuid: 65cac56d-4155-43c8-bae0-f368cb21f771
+  alterId: 1
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
   udp: true
-- name: CN_17
-  server: gzcm.rokishi.cyou
-  port: 20028
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: d360a89a-3618-4573-91c9-3c3d7cd5df68
-  udp: true
-- name: _24
-  server: 172.105.232.147
-  port: 5004
+- name: IN_印度_01
+  server: 172.105.35.61
+  port: 8118
   type: ss
   cipher: aes-256-gcm
-  password: g5MeD6Ft3CWlJId
+  password: cdBIDV42DCwnfIN
   udp: true
-- name: CN_9
-  server: gzcm.rokishi.cyou
-  port: 20006
+- name: FR_法国_01
+  server: 198.244.150.26
+  port: 826
   type: ss
   cipher: chacha20-ietf-poly1305
-  password: d360a89a-3618-4573-91c9-3c3d7cd5df68
+  password: sF43Xt2gONqcgFX563
   udp: true
-- name: US_1897 |22.47Mb
-  server: hk.azure.elaina.link
-  port: 80
+- name: DE_德国_01
+  server: 5.183.179.138
+  port: 443
+  type: trojan
+  password: 28d98f761aca9d636f44db62544628eb
+  skip-cert-verify: true
+  udp: true
+- name: CN_中国_02
+  server: cm-jm.okvpn.xyz
+  port: 20015
   type: vmess
-  uuid: d360a89a-3618-4573-91c9-3c3d7cd5df68
+  uuid: be0acefb-485f-4395-adb9-f15428d10ca4
   alterId: 1
   cipher: auto
   tls: false
@@ -80,175 +55,49 @@ proxies:
   network: ws
   ws-path: /
   ws-headers:
-    Host: hk.azure.elaina.link
+    Host: cm-jm.okvpn.xyz
   udp: true
-- name: _04
-  server: 172.105.35.61
-  port: 8118
-  type: ss
-  cipher: aes-256-gcm
-  password: cdBIDV42DCwnfIN
-  udp: true
-- name: _05
-  server: 172.105.42.94
-  port: 8119
-  type: ss
-  cipher: aes-256-gcm
-  password: cdBIDV42DCwnfIN
-  udp: true
-- name: IN_562 |15.48Mb
-  server: 172.105.41.63
-  port: 3306
-  type: ss
-  cipher: aes-256-gcm
-  password: Y6R9pAtvxxzmGC
-  udp: true
-- name: _03
-  server: 51.79.178.17
-  port: 5000
-  type: ss
-  cipher: aes-256-gcm
-  password: Y6R9pAtvxxzmGC
-  udp: true
-- name: Relay_ | 6.92Mb
-  server: hzcm.rokishi.cyou
-  port: 20007
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: d360a89a-3618-4573-91c9-3c3d7cd5df68
-  udp: true
-- name: CN_62
-  server: gzcm.rokishi.cyou
-  port: 20020
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: d360a89a-3618-4573-91c9-3c3d7cd5df68
-  udp: true
-- name: CN_26
-  server: jmcm.rokishi.cyou
-  port: 10036
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: d360a89a-3618-4573-91c9-3c3d7cd5df68
-  udp: true
-- name: _308 | 6.59Mb
-  server: 198.244.150.26
-  port: 826
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: sF43Xt2gONqcgFX563
-  udp: true
-- name: DE_391 |39.98Mb
-  server: 141.95.0.26
-  port: 826
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: sF43Xt2gONqcgFX563
-  udp: true
-- name: ZZ_2037 |143.89Mb
-  server: 134.195.196.193
-  port: 8090
-  type: ss
-  cipher: aes-256-gcm
-  password: PCnnH6SQSnfoS27
-  udp: true
-- name: _532 |15.10Mb
-  server: 167.88.63.61
-  port: 8119
-  type: ss
-  cipher: aes-256-gcm
-  password: cdBIDV42DCwnfIN
-  udp: true
-- name: _356 |15.06Mb
-  server: 169.197.141.240
-  port: 7001
-  type: ss
-  cipher: aes-256-gcm
-  password: RexnBgU7EV5ADxG
-  udp: true
-- name: US_1898 |23.42Mb
-  server: hk.azure.elaina.link
-  port: 443
+- name: CN_中国_03
+  server: cm-jm.okvpn.xyz
+  port: 20006
   type: vmess
-  uuid: d360a89a-3618-4573-91c9-3c3d7cd5df68
+  uuid: be0acefb-485f-4395-adb9-f15428d10ca4
   alterId: 1
   cipher: auto
   tls: false
   skip-cert-verify: true
   network: ws
-  ws-path: /JJkuv3
+  ws-path: /
   ws-headers:
-    Host: hk.azure.elaina.link
+    Host: cm-jm.okvpn.xyz
   udp: true
-- name: ZZ_2082 |128.09Mb
-  server: 134.195.196.184
-  port: 8080
-  type: ss
-  cipher: aes-256-gcm
-  password: KixLvKzwjekG00rm
+- name: US_美国_01
+  server: 149.248.0.165
+  port: 61903
+  type: vmess
+  uuid: 491e1048-5b56-11ec-89b1-560003bbaee4
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-path: /kAHqFdEy/
+  ws-headers:
+    Host: 149.248.0.165
   udp: true
-- name: ZZ_2164 |150.44Mb
-  server: 134.195.196.193
-  port: 8091
-  type: ss
-  cipher: aes-256-gcm
-  password: PCnnH6SQSnfoS27
-  udp: true
-- name: ZZ_2047 |139.73Mb
-  server: 134.195.196.193
-  port: 5003
-  type: ss
-  cipher: aes-256-gcm
-  password: g5MeD6Ft3CWlJId
-  udp: true
-- name: ZZ_2049 |80.80Mb
-  server: 134.195.196.184
-  port: 7307
-  type: ss
-  cipher: aes-256-gcm
-  password: FoOiGlkAA9yPEGP
-  udp: true
-- name: ZZ_2081 |142.36Mb
-  server: 134.195.196.193
-  port: 2375
-  type: ss
-  cipher: aes-256-gcm
-  password: faBAoD54k87UJG7
-  udp: true
-- name: ZZ_2059 |61.05Mb
-  server: 134.195.196.184
-  port: 3389
-  type: ss
-  cipher: aes-256-gcm
-  password: Y6R9pAtvxxzmGC
-  udp: true
-- name: CN_52
-  server: gz.cm.data2china.com
-  port: 30046
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: d360a89a-3618-4573-91c9-3c3d7cd5df68
-  udp: true
-- name: GB_475 |70.35Mb
-  server: 23.106.35.90
-  port: 18336
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: A33x2ly5CjwpZ7DYZOe4FC0CupxSKA89caI8gSlRaE3DYnaXeORD6SNFyqBTz3
-  udp: true
-- name: ZZ_2019 |139.49Mb
-  server: 134.195.196.193
-  port: 7307
-  type: ss
-  cipher: aes-256-gcm
-  password: FoOiGlkAA9yPEGP
-  udp: true
-- name: _09
-  server: 217.182.199.168
-  port: 8888
-  type: ss
-  cipher: aes-256-gcm
-  password: Y6R9pAtvxxzmGC
+- name: CN_中国_04
+  server: 120.232.173.88
+  port: 45319
+  type: vmess
+  uuid: 310948de-6c49-36f3-990e-2048adea5ab0
+  alterId: 2
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-path: /inde
+  ws-headers:
+    Host: 120.232.173.88
   udp: true
 proxy-groups:
 - name: 🚀 节点选择
@@ -257,116 +106,44 @@ proxy-groups:
   - ♻️ 自动选择
   - 🔯 故障转移
   - DIRECT
-  - CN_10
-  - CN_16
-  - CN_31
-  - CN_7
-  - JP_623 |30.43Mb
-  - CN_20
-  - CN_17
-  - _24
-  - CN_9
-  - US_1897 |22.47Mb
-  - _04
-  - _05
-  - IN_562 |15.48Mb
-  - _03
-  - Relay_ | 6.92Mb
-  - CN_62
-  - CN_26
-  - _308 | 6.59Mb
-  - DE_391 |39.98Mb
-  - ZZ_2037 |143.89Mb
-  - _532 |15.10Mb
-  - _356 |15.06Mb
-  - US_1898 |23.42Mb
-  - ZZ_2082 |128.09Mb
-  - ZZ_2164 |150.44Mb
-  - ZZ_2047 |139.73Mb
-  - ZZ_2049 |80.80Mb
-  - ZZ_2081 |142.36Mb
-  - ZZ_2059 |61.05Mb
-  - CN_52
-  - GB_475 |70.35Mb
-  - ZZ_2019 |139.49Mb
-  - _09
+  - JP_日本_01
+  - CN_中国_01
+  - IN_印度_01
+  - FR_法国_01
+  - DE_德国_01
+  - CN_中国_02
+  - CN_中国_03
+  - US_美国_01
+  - CN_中国_04
 - name: ♻️ 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
   proxies:
-  - CN_10
-  - CN_16
-  - CN_31
-  - CN_7
-  - JP_623 |30.43Mb
-  - CN_20
-  - CN_17
-  - _24
-  - CN_9
-  - US_1897 |22.47Mb
-  - _04
-  - _05
-  - IN_562 |15.48Mb
-  - _03
-  - Relay_ | 6.92Mb
-  - CN_62
-  - CN_26
-  - _308 | 6.59Mb
-  - DE_391 |39.98Mb
-  - ZZ_2037 |143.89Mb
-  - _532 |15.10Mb
-  - _356 |15.06Mb
-  - US_1898 |23.42Mb
-  - ZZ_2082 |128.09Mb
-  - ZZ_2164 |150.44Mb
-  - ZZ_2047 |139.73Mb
-  - ZZ_2049 |80.80Mb
-  - ZZ_2081 |142.36Mb
-  - ZZ_2059 |61.05Mb
-  - CN_52
-  - GB_475 |70.35Mb
-  - ZZ_2019 |139.49Mb
-  - _09
+  - JP_日本_01
+  - CN_中国_01
+  - IN_印度_01
+  - FR_法国_01
+  - DE_德国_01
+  - CN_中国_02
+  - CN_中国_03
+  - US_美国_01
+  - CN_中国_04
 - name: 🔯 故障转移
   type: fallback
   url: http://www.gstatic.com/generate_204
   interval: 180
   proxies:
-  - CN_10
-  - CN_16
-  - CN_31
-  - CN_7
-  - JP_623 |30.43Mb
-  - CN_20
-  - CN_17
-  - _24
-  - CN_9
-  - US_1897 |22.47Mb
-  - _04
-  - _05
-  - IN_562 |15.48Mb
-  - _03
-  - Relay_ | 6.92Mb
-  - CN_62
-  - CN_26
-  - _308 | 6.59Mb
-  - DE_391 |39.98Mb
-  - ZZ_2037 |143.89Mb
-  - _532 |15.10Mb
-  - _356 |15.06Mb
-  - US_1898 |23.42Mb
-  - ZZ_2082 |128.09Mb
-  - ZZ_2164 |150.44Mb
-  - ZZ_2047 |139.73Mb
-  - ZZ_2049 |80.80Mb
-  - ZZ_2081 |142.36Mb
-  - ZZ_2059 |61.05Mb
-  - CN_52
-  - GB_475 |70.35Mb
-  - ZZ_2019 |139.49Mb
-  - _09
+  - JP_日本_01
+  - CN_中国_01
+  - IN_印度_01
+  - FR_法国_01
+  - DE_德国_01
+  - CN_中国_02
+  - CN_中国_03
+  - US_美国_01
+  - CN_中国_04
 - name: 🎯 全球直连
   type: select
   proxies:
@@ -385,39 +162,15 @@ proxy-groups:
   - 🎯 全球直连
   - ♻️ 自动选择
   - 🔯 故障转移
-  - CN_10
-  - CN_16
-  - CN_31
-  - CN_7
-  - JP_623 |30.43Mb
-  - CN_20
-  - CN_17
-  - _24
-  - CN_9
-  - US_1897 |22.47Mb
-  - _04
-  - _05
-  - IN_562 |15.48Mb
-  - _03
-  - Relay_ | 6.92Mb
-  - CN_62
-  - CN_26
-  - _308 | 6.59Mb
-  - DE_391 |39.98Mb
-  - ZZ_2037 |143.89Mb
-  - _532 |15.10Mb
-  - _356 |15.06Mb
-  - US_1898 |23.42Mb
-  - ZZ_2082 |128.09Mb
-  - ZZ_2164 |150.44Mb
-  - ZZ_2047 |139.73Mb
-  - ZZ_2049 |80.80Mb
-  - ZZ_2081 |142.36Mb
-  - ZZ_2059 |61.05Mb
-  - CN_52
-  - GB_475 |70.35Mb
-  - ZZ_2019 |139.49Mb
-  - _09
+  - JP_日本_01
+  - CN_中国_01
+  - IN_印度_01
+  - FR_法国_01
+  - DE_德国_01
+  - CN_中国_02
+  - CN_中国_03
+  - US_美国_01
+  - CN_中国_04
 rules:
 - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
 - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
