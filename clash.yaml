@@ -5,11 +5,25 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-- name: AU_14
-  server: 43.155.75.170
+- name: JP_日本_01
+  server: 1005jp.fans8.xyz
   port: 80
   type: vmess
-  uuid: 76329684-c5d2-4cf7-fcf5-06ad79a6aab3
+  uuid: fbf53107-1b42-3da5-a77d-6ad22544c0e9
+  alterId: 2
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-path: /v2ray
+  ws-headers:
+    Host: 1005jp.fans8.xyz
+  udp: true
+- name: JP_日本_02
+  server: 172.104.98.216
+  port: 80
+  type: vmess
+  uuid: e5af0cad-295c-37b2-b601-f35d13f6b1bb
   alterId: 64
   cipher: auto
   tls: false
@@ -17,447 +31,45 @@ proxies:
   network: ws
   ws-path: /
   ws-headers:
-    Host: 43.155.75.170
+    Host: 172.104.98.216
   udp: true
-- name: Relay_🇫🇷FR-🇫🇷FR_313
-  server: 145.239.1.137
-  port: 7307
+- name: HK_香港_01
+  server: 118.107.244.112
+  port: 5003
   type: ss
   cipher: aes-256-gcm
-  password: FoOiGlkAA9yPEGP
+  password: g5MeD6Ft3CWlJId
   udp: true
-- name: Relay_🇫🇷FR-🇫🇷FR_296
-  server: 145.239.1.137
-  port: 3306
+- name: FR_法国_01
+  server: 141.95.0.26
+  port: 826
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: sF43Xt2gONqcgFX563
+  udp: true
+- name: FR_法国_02
+  server: 217.182.199.168
+  port: 5500
   type: ss
   cipher: aes-256-gcm
-  password: Y6R9pAtvxxzmGC
+  password: KixLvKzwjekG00rm
   udp: true
-- name: Relay_🇫🇷FR-🇫🇷FR_297
-  server: 145.239.1.137
-  port: 7306
-  type: ss
-  cipher: aes-256-gcm
-  password: FoOiGlkAA9yPEGP
-  udp: true
-- name: HK_407
-  server: www.zx07.top
+- name: DE_德国_01
+  server: 5.183.179.138
   port: 443
   type: trojan
-  password: L1qNeGrY58ApwrRA
+  password: 28d98f761aca9d636f44db62544628eb
   skip-cert-verify: true
   udp: true
-- name: JP_515
-  server: a83679f.hf.gladns.com
-  port: 3306
+- name: CN_中国_01
+  server: 42.157.8.162
+  port: 48106
   type: vmess
-  uuid: 57e0cb4d-eae5-48ec-8091-149dc2b309e0
-  alterId: 32
+  uuid: 3959477e-55c4-453f-bc80-3b13e64891ac
+  alterId: 64
   cipher: auto
   tls: false
   skip-cert-verify: true
-  network: ws
-  ws-path: /t
-  ws-headers:
-    Host: a83679f.hf.gladns.com
-  udp: true
-- name: JP_497
-  server: 172.105.251.193
-  port: 2376
-  type: ss
-  cipher: aes-256-gcm
-  password: faBAoD54k87UJG7
-  udp: true
-- name: JP_465
-  server: 172.105.251.193
-  port: 5003
-  type: ss
-  cipher: aes-256-gcm
-  password: g5MeD6Ft3CWlJId
-  udp: true
-- name: JP_468
-  server: 172.105.251.193
-  port: 5004
-  type: ss
-  cipher: aes-256-gcm
-  password: g5MeD6Ft3CWlJId
-  udp: true
-- name: JP_494
-  server: 172.105.244.165
-  port: 2375
-  type: ss
-  cipher: aes-256-gcm
-  password: faBAoD54k87UJG7
-  udp: true
-- name: JP_496
-  server: 172.105.244.165
-  port: 7307
-  type: ss
-  cipher: aes-256-gcm
-  password: FoOiGlkAA9yPEGP
-  udp: true
-- name: JP_463
-  server: 172.105.244.165
-  port: 5003
-  type: ss
-  cipher: aes-256-gcm
-  password: g5MeD6Ft3CWlJId
-  udp: true
-- name: JP_471
-  server: 172.105.244.165
-  port: 3389
-  type: ss
-  cipher: aes-256-gcm
-  password: Y6R9pAtvxxzmGC
-  udp: true
-- name: NO_567
-  server: 46.29.218.170
-  port: 8119
-  type: ss
-  cipher: aes-256-gcm
-  password: cdBIDV42DCwnfIN
-  udp: true
-- name: NO_562
-  server: 46.29.219.246
-  port: 7307
-  type: ss
-  cipher: aes-256-gcm
-  password: FoOiGlkAA9yPEGP
-  udp: true
-- name: SG_681
-  server: 172.104.168.83
-  port: 443
-  type: ss
-  cipher: aes-256-gcm
-  password: pKEW8JPByTVTLtM
-  udp: true
-- name: Pool_🇹🇼TW_811
-  server: 59.125.11.158
-  port: 8158
-  type: ssr
-  cipher: rc4-md5
-  password: passinfo123
-  protocol: origin
-  obfs: plain
-  protocol-param: ''
-  obfs-param: ''
-  udp: true
-- name: SG_755
-  server: 172.104.168.83
-  port: 2375
-  type: ss
-  cipher: aes-256-gcm
-  password: faBAoD54k87UJG7
-  udp: true
-- name: SG_758
-  server: 172.104.168.83
-  port: 3306
-  type: ss
-  cipher: aes-256-gcm
-  password: Y6R9pAtvxxzmGC
-  udp: true
-- name: SG_788
-  server: 172.104.168.83
-  port: 8090
-  type: ss
-  cipher: aes-256-gcm
-  password: PCnnH6SQSnfoS27
-  udp: true
-- name: SG_767
-  server: 172.104.168.83
-  port: 3389
-  type: ss
-  cipher: aes-256-gcm
-  password: Y6R9pAtvxxzmGC
-  udp: true
-- name: SG_799
-  server: 8.214.46.152
-  port: 50885
-  type: vmess
-  uuid: d064d11b-477c-4c5d-a2d8-9fd599ef8e79
-  alterId: 1
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-path: /
-  ws-headers:
-    Host: 8.214.46.152
-  udp: true
-- name: Relay_🇺🇦UA-🇺🇦UA_817
-  server: 37.19.218.197
-  port: 8388
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: Mx6DztQqZb7j34FdWjER
-  udp: true
-- name: SG_786
-  server: 172.104.168.83
-  port: 8080
-  type: ss
-  cipher: aes-256-gcm
-  password: KixLvKzwjekG00rm
-  udp: true
-- name: SG_801
-  server: 172.105.113.182
-  port: 59633
-  type: vmess
-  uuid: f0dad28b-c9d3-44e7-9447-6a99fe35abb6
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  udp: true
-- name: US_982
-  server: 38.68.135.93
-  port: 7306
-  type: ss
-  cipher: aes-256-gcm
-  password: FoOiGlkAA9yPEGP
-  udp: true
-- name: US_1015
-  server: 38.114.114.69
-  port: 8091
-  type: ss
-  cipher: aes-256-gcm
-  password: PCnnH6SQSnfoS27
-  udp: true
-- name: US_987
-  server: 38.68.135.93
-  port: 8080
-  type: ss
-  cipher: aes-256-gcm
-  password: KixLvKzwjekG00rm
-  udp: true
-- name: US_1008
-  server: 167.88.63.89
-  port: 8080
-  type: ss
-  cipher: aes-256-gcm
-  password: KixLvKzwjekG00rm
-  udp: true
-- name: US_1020
-  server: 167.88.63.89
-  port: 2375
-  type: ss
-  cipher: aes-256-gcm
-  password: faBAoD54k87UJG7
-  udp: true
-- name: US_1131
-  server: 38.114.114.69
-  port: 7307
-  type: ss
-  cipher: aes-256-gcm
-  password: FoOiGlkAA9yPEGP
-  udp: true
-- name: US_1057
-  server: 38.68.135.93
-  port: 3389
-  type: ss
-  cipher: aes-256-gcm
-  password: Y6R9pAtvxxzmGC
-  udp: true
-- name: US_1075
-  server: 142.202.48.17
-  port: 3306
-  type: ss
-  cipher: aes-256-gcm
-  password: Y6R9pAtvxxzmGC
-  udp: true
-- name: US_1179
-  server: 167.88.63.89
-  port: 7306
-  type: ss
-  cipher: aes-256-gcm
-  password: FoOiGlkAA9yPEGP
-  udp: true
-- name: US_1338
-  server: 167.88.63.89
-  port: 8091
-  type: ss
-  cipher: aes-256-gcm
-  password: PCnnH6SQSnfoS27
-  udp: true
-- name: US_1348
-  server: 38.75.136.102
-  port: 5003
-  type: ss
-  cipher: aes-256-gcm
-  password: g5MeD6Ft3CWlJId
-  udp: true
-- name: US_1640
-  server: 38.114.114.69
-  port: 3306
-  type: ss
-  cipher: aes-256-gcm
-  password: Y6R9pAtvxxzmGC
-  udp: true
-- name: US_1606
-  server: 38.68.135.93
-  port: 443
-  type: ss
-  cipher: aes-256-gcm
-  password: pKEW8JPByTVTLtM
-  udp: true
-- name: US_1617
-  server: 167.88.63.89
-  port: 443
-  type: ss
-  cipher: aes-256-gcm
-  password: pKEW8JPByTVTLtM
-  udp: true
-- name: US_1593
-  server: 38.75.136.102
-  port: 443
-  type: ss
-  cipher: aes-256-gcm
-  password: pKEW8JPByTVTLtM
-  udp: true
-- name: Relay_🇺🇸US-🇺🇸US_1676
-  server: c23s801.jamjams.net
-  port: 61173
-  type: vmess
-  uuid: 9d1043a6-e87e-4bb7-8858-c1185e9c0c3b
-  alterId: 8
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  udp: true
-- name: US_1699
-  server: 192.74.254.167
-  port: 500
-  type: vmess
-  uuid: 764e808a-115e-11ec-a88f-00163c9f4934
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  udp: true
-- name: IN_482 | 2.87Mb
-  server: 169.38.107.52
-  port: 8388
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: 7D4GYNDaFy4eebe47tvF
-  udp: true
-- name: US_1722 |60.03Mb
-  server: 23.83.227.114
-  port: 61173
-  type: vmess
-  uuid: 9d1043a6-e87e-4bb7-8858-c1185e9c0c3b
-  alterId: 8
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  udp: true
-- name: US_1705 |12.20Mb
-  server: 107.148.200.123
-  port: 30033
-  type: vmess
-  uuid: e85a81e0-12a0-11ec-bc90-00163c1b189e
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  udp: true
-- name: RU_661 |11.47Mb
-  server: 194.87.70.151
-  port: 41709
-  type: vmess
-  uuid: afb1e44e-588e-11ec-8c53-4aee85755798
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  udp: true
-- name: NO_602 | 7.32Mb
-  server: 46.29.218.170
-  port: 8118
-  type: ss
-  cipher: aes-256-gcm
-  password: cdBIDV42DCwnfIN
-  udp: true
-- name: Relay_ | 2.18Mb
-  server: p5.22332e.com
-  port: 8333
-  type: ssr
-  cipher: rc4-md5
-  password: passfw2xs4e!
-  protocol: origin
-  obfs: plain
-  protocol-param: t.me/SSRSUB
-  obfs-param: ''
-  udp: true
-- name: Relay_ | 3.47Mb
-  server: ssr3.ssrsub.com
-  port: 8333
-  type: ssr
-  cipher: rc4-md5
-  password: passfw2xs4e!
-  protocol: origin
-  obfs: plain
-  protocol-param: t.me/SSRSUB
-  obfs-param: ''
-  udp: true
-- name: CN_66
-  server: 101.132.192.212
-  port: 30003
-  type: ss
-  cipher: aes-128-gcm
-  password: desperadoj.com_free_proxy_d39m
-  udp: true
-- name: HK_308
-  server: 84.17.37.55
-  port: 8389
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: tjwRqQvteAjt3xFmbZTA
-  udp: true
-- name: CN_68
-  server: 117.28.243.169
-  port: 8333
-  type: ss
-  cipher: rc4-md5
-  password: passfw2xs4e!
-  udp: true
-- name: CN_64
-  server: ssr4.ssrsub.com
-  port: 8333
-  type: ssr
-  cipher: rc4-md5
-  password: passfw2xs4e!
-  protocol: origin
-  obfs: plain
-  protocol-param: ''
-  obfs-param: ''
-  udp: true
-- name: CN_67
-  server: music.desperadoj.com
-  port: 30003
-  type: ss
-  cipher: aes-128-gcm
-  password: desperadoj.com_free_proxy_d39m
-  udp: true
-- name: _168 | 4.55Mb
-  server: 46.29.219.246
-  port: 2376
-  type: ss
-  cipher: aes-256-gcm
-  password: faBAoD54k87UJG7
-  udp: true
-- name: _170 | 3.75Mb
-  server: 46.29.219.246
-  port: 8090
-  type: ss
-  cipher: aes-256-gcm
-  password: PCnnH6SQSnfoS27
-  udp: true
-- name: Relay_🇯🇵JP-🇵🇰PK_866 |19.60Mb
-  server: 84.17.34.8
-  port: 8389
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: FuynHKjkzhBnmcLpaLKm
   udp: true
 proxy-groups:
 - name: 🚀 节点选择
@@ -466,188 +78,38 @@ proxy-groups:
   - ♻️ 自动选择
   - 🔯 故障转移
   - DIRECT
-  - AU_14
-  - Relay_🇫🇷FR-🇫🇷FR_313
-  - Relay_🇫🇷FR-🇫🇷FR_296
-  - Relay_🇫🇷FR-🇫🇷FR_297
-  - HK_407
-  - JP_515
-  - JP_497
-  - JP_465
-  - JP_468
-  - JP_494
-  - JP_496
-  - JP_463
-  - JP_471
-  - NO_567
-  - NO_562
-  - SG_681
-  - Pool_🇹🇼TW_811
-  - SG_755
-  - SG_758
-  - SG_788
-  - SG_767
-  - SG_799
-  - Relay_🇺🇦UA-🇺🇦UA_817
-  - SG_786
-  - SG_801
-  - US_982
-  - US_1015
-  - US_987
-  - US_1008
-  - US_1020
-  - US_1131
-  - US_1057
-  - US_1075
-  - US_1179
-  - US_1338
-  - US_1348
-  - US_1640
-  - US_1606
-  - US_1617
-  - US_1593
-  - Relay_🇺🇸US-🇺🇸US_1676
-  - US_1699
-  - IN_482 | 2.87Mb
-  - US_1722 |60.03Mb
-  - US_1705 |12.20Mb
-  - RU_661 |11.47Mb
-  - NO_602 | 7.32Mb
-  - Relay_ | 2.18Mb
-  - Relay_ | 3.47Mb
-  - CN_66
-  - HK_308
-  - CN_68
-  - CN_64
-  - CN_67
-  - _168 | 4.55Mb
-  - _170 | 3.75Mb
-  - Relay_🇯🇵JP-🇵🇰PK_866 |19.60Mb
+  - JP_日本_01
+  - JP_日本_02
+  - HK_香港_01
+  - FR_法国_01
+  - FR_法国_02
+  - DE_德国_01
+  - CN_中国_01
 - name: ♻️ 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
   proxies:
-  - AU_14
-  - Relay_🇫🇷FR-🇫🇷FR_313
-  - Relay_🇫🇷FR-🇫🇷FR_296
-  - Relay_🇫🇷FR-🇫🇷FR_297
-  - HK_407
-  - JP_515
-  - JP_497
-  - JP_465
-  - JP_468
-  - JP_494
-  - JP_496
-  - JP_463
-  - JP_471
-  - NO_567
-  - NO_562
-  - SG_681
-  - Pool_🇹🇼TW_811
-  - SG_755
-  - SG_758
-  - SG_788
-  - SG_767
-  - SG_799
-  - Relay_🇺🇦UA-🇺🇦UA_817
-  - SG_786
-  - SG_801
-  - US_982
-  - US_1015
-  - US_987
-  - US_1008
-  - US_1020
-  - US_1131
-  - US_1057
-  - US_1075
-  - US_1179
-  - US_1338
-  - US_1348
-  - US_1640
-  - US_1606
-  - US_1617
-  - US_1593
-  - Relay_🇺🇸US-🇺🇸US_1676
-  - US_1699
-  - IN_482 | 2.87Mb
-  - US_1722 |60.03Mb
-  - US_1705 |12.20Mb
-  - RU_661 |11.47Mb
-  - NO_602 | 7.32Mb
-  - Relay_ | 2.18Mb
-  - Relay_ | 3.47Mb
-  - CN_66
-  - HK_308
-  - CN_68
-  - CN_64
-  - CN_67
-  - _168 | 4.55Mb
-  - _170 | 3.75Mb
-  - Relay_🇯🇵JP-🇵🇰PK_866 |19.60Mb
+  - JP_日本_01
+  - JP_日本_02
+  - HK_香港_01
+  - FR_法国_01
+  - FR_法国_02
+  - DE_德国_01
+  - CN_中国_01
 - name: 🔯 故障转移
   type: fallback
   url: http://www.gstatic.com/generate_204
   interval: 180
   proxies:
-  - AU_14
-  - Relay_🇫🇷FR-🇫🇷FR_313
-  - Relay_🇫🇷FR-🇫🇷FR_296
-  - Relay_🇫🇷FR-🇫🇷FR_297
-  - HK_407
-  - JP_515
-  - JP_497
-  - JP_465
-  - JP_468
-  - JP_494
-  - JP_496
-  - JP_463
-  - JP_471
-  - NO_567
-  - NO_562
-  - SG_681
-  - Pool_🇹🇼TW_811
-  - SG_755
-  - SG_758
-  - SG_788
-  - SG_767
-  - SG_799
-  - Relay_🇺🇦UA-🇺🇦UA_817
-  - SG_786
-  - SG_801
-  - US_982
-  - US_1015
-  - US_987
-  - US_1008
-  - US_1020
-  - US_1131
-  - US_1057
-  - US_1075
-  - US_1179
-  - US_1338
-  - US_1348
-  - US_1640
-  - US_1606
-  - US_1617
-  - US_1593
-  - Relay_🇺🇸US-🇺🇸US_1676
-  - US_1699
-  - IN_482 | 2.87Mb
-  - US_1722 |60.03Mb
-  - US_1705 |12.20Mb
-  - RU_661 |11.47Mb
-  - NO_602 | 7.32Mb
-  - Relay_ | 2.18Mb
-  - Relay_ | 3.47Mb
-  - CN_66
-  - HK_308
-  - CN_68
-  - CN_64
-  - CN_67
-  - _168 | 4.55Mb
-  - _170 | 3.75Mb
-  - Relay_🇯🇵JP-🇵🇰PK_866 |19.60Mb
+  - JP_日本_01
+  - JP_日本_02
+  - HK_香港_01
+  - FR_法国_01
+  - FR_法国_02
+  - DE_德国_01
+  - CN_中国_01
 - name: 🎯 全球直连
   type: select
   proxies:
@@ -666,63 +128,13 @@ proxy-groups:
   - 🎯 全球直连
   - ♻️ 自动选择
   - 🔯 故障转移
-  - AU_14
-  - Relay_🇫🇷FR-🇫🇷FR_313
-  - Relay_🇫🇷FR-🇫🇷FR_296
-  - Relay_🇫🇷FR-🇫🇷FR_297
-  - HK_407
-  - JP_515
-  - JP_497
-  - JP_465
-  - JP_468
-  - JP_494
-  - JP_496
-  - JP_463
-  - JP_471
-  - NO_567
-  - NO_562
-  - SG_681
-  - Pool_🇹🇼TW_811
-  - SG_755
-  - SG_758
-  - SG_788
-  - SG_767
-  - SG_799
-  - Relay_🇺🇦UA-🇺🇦UA_817
-  - SG_786
-  - SG_801
-  - US_982
-  - US_1015
-  - US_987
-  - US_1008
-  - US_1020
-  - US_1131
-  - US_1057
-  - US_1075
-  - US_1179
-  - US_1338
-  - US_1348
-  - US_1640
-  - US_1606
-  - US_1617
-  - US_1593
-  - Relay_🇺🇸US-🇺🇸US_1676
-  - US_1699
-  - IN_482 | 2.87Mb
-  - US_1722 |60.03Mb
-  - US_1705 |12.20Mb
-  - RU_661 |11.47Mb
-  - NO_602 | 7.32Mb
-  - Relay_ | 2.18Mb
-  - Relay_ | 3.47Mb
-  - CN_66
-  - HK_308
-  - CN_68
-  - CN_64
-  - CN_67
-  - _168 | 4.55Mb
-  - _170 | 3.75Mb
-  - Relay_🇯🇵JP-🇵🇰PK_866 |19.60Mb
+  - JP_日本_01
+  - JP_日本_02
+  - HK_香港_01
+  - FR_法国_01
+  - FR_法国_02
+  - DE_德国_01
+  - CN_中国_01
 rules:
 - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
 - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
